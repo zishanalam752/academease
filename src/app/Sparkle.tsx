@@ -39,7 +39,7 @@ export function SparklesPreview() {
           <div className="flex justify-center items-center gap-2">Join now <FaArrowRight /></div>
         </button>
         <button className="w-40 h-10 rounded-xl bg-white text-black border border-black  text-sm">
-          Signup
+          Login
         </button>
       </div>
       </div>

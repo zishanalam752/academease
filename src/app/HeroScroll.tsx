@@ -10,9 +10,9 @@ export function HeroScrollDemo() {
         titleComponent={
           <>
             <h1 className="text-4xl font-semibold text-black dark:text-white">
-              Unleash the power of <br />
-              <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
-                Scroll Animations
+            Fuel Your Ambition <br />
+              <span className="text-2xl md:text-[4rem] font-bold mt-1 leading-none">
+              Discover New Job/Internship Opportunities Every Day
               </span>
             </h1>
           </>
