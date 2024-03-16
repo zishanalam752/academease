@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { ContainerScroll } from "../components/ui/container-scroll-animation";
-
+import Reveal from "./Reveal";
 export function HeroScrollDemo() {
   return (
     <div className="flex flex-col overflow-hidden">
@@ -9,12 +9,12 @@ export function HeroScrollDemo() {
         users={users}
         titleComponent={
           <>
-            <h1 className="text-4xl font-semibold text-black dark:text-white">
-            Fuel Your Ambition <br />
-              <span className="text-2xl md:text-[4rem] font-bold mt-1 leading-none">
-              Discover New Job/Internship Opportunities Every Day
+            <Reveal><h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black dark:text-white">
+            Fuel Your <span className="bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent">Ambition </span><br />
+              <span className="text-3xl md:text-4xl lg:text-5xl font-bold mt-1 leading-none">
+              Discover New <span className="bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent">Job/Internship</span> Opportunities Every Day
               </span>
-            </h1>
+            </h1></Reveal>
           </>
         }
       />

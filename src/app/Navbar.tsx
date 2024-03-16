@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               {/* LOGO */}
               <Link href="/">
-                <h2 className="text-2xl text-cyan-600 font-bold">AcademEase</h2>
+                <h2 className="text-2xl bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent font-bold">AcademEase</h2>
               </Link>
               {/* HAMBURGER BUTTON FOR MOBILE */}
               <div className="md:hidden">
