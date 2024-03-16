@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "@lottiefiles/react-lottie-player": "^3.5.3",
-    "@tabler/icons-react": "^3.0.1",
+    "@radix-ui/react-label": "^2.0.2",
+    "@tabler/icons-react": "^3.1.0",
     "@tsparticles/engine": "^3.3.0",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.3.0",

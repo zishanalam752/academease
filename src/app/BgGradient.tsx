@@ -8,7 +8,7 @@ import CodeBlock from "./CodeBlock";
 import Reveal from "./Reveal";
 export function BackgroundGradientDemo(props: any) {
   return (
-    <div className="w-auto md:w-[89%] lg:w-[89%] flex  flex-col md:flex-row lg:flex-row justify-between ml-8">
+    <div className="w-auto md:w-[89%] lg:w-[89%] flex  flex-col md:flex-col lg:flex-row justify-between ml-8">
       <div className="w-[11%]"></div>
       <BackgroundGradient className="rounded-[22px] max-w-full p-4 sm:p-10 bg-white dark:bg-zinc-900 ">
 
@@ -19,11 +19,8 @@ export function BackgroundGradientDemo(props: any) {
               {props.description}
             </p></Reveal>
 
-            <button className="rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-zinc-800">
-              <span>Buy now </span>
-              <span className="bg-zinc-700 rounded-full text-[0.6rem] px-2 py-0 text-white">
-                $100
-              </span>
+            <button className="rounded-lg px-2 md:px-4 lg:px-6 py-4 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-zinc-800 text-center">
+              Join Now
             </button>
           </div>
           <Reveal><div className="overflow-hidden">

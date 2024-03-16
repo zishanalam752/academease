@@ -7,7 +7,7 @@ export function InfiniteMovingCardsDemo() {
     return (
         <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden ">
             <div className="w-full flex justify-center text-center">
-                <h1 className="text-center flex font-bold text-2xl md:text-3xl lg:text-5xl mb-8 w-[80%] justify-center items-center">Top <span className="bg-gradient-to-r from-teal-200 to-teal-500 bg-clip-text text-transparent ">Reviews</span></h1>
+                <h1 className="text-center flex font-bold text-2xl md:text-3xl lg:text-5xl mb-8 w-[80%] justify-center items-center">Students <span className="bg-gradient-to-r from-teal-200 to-teal-500 bg-clip-text text-transparent ">Testimonial</span></h1>
             </div>  
             <Reveal><InfiniteMovingCards
                 items={testimonials}
@@ -21,31 +21,31 @@ export function InfiniteMovingCardsDemo() {
 const testimonials = [
     {
         quote:
-            "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-        name: "Charles Dickens",
-        title: "A Tale of Two Cities",
+            "The notes on this website are incredibly detailed and well-organized. They have been a lifesaver for my B.Tech studies, helping me understand complex concepts easily.",
+        name: "Tanya",
+        title: "Student",
     },
     {
         quote:
-            "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-        name: "William Shakespeare",
-        title: "Hamlet",
+            "I am extremely impressed with the overall experience on this website. The notes are well-structured, the PYQ collection is extensive, and the user interface is excellent. Highly recommended!",
+        name: "Moksh",
+        title: "Student",
     },
     {
-        quote: "All that we see or seem is but a dream within a dream.",
-        name: "Edgar Allan Poe",
-        title: "A Dream Within a Dream",
-    },
-    {
-        quote:
-            "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-        name: "Jane Austen",
-        title: "Pride and Prejudice",
+        quote: "The PYQ section has been a game-changer for me. Practicing previous year questions has significantly improved my exam performance and boosted my confidence.",
+        name: "Zishan",
+        title: "Student",
     },
     {
         quote:
-            "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-        name: "Herman Melville",
-        title: "Moby-Dick",
+            " The quality of the notes is top-notch. They cover all the important topics and are written in a concise yet comprehensive manner, making studying a breeze.",
+        name: "Khalid",
+        title: "Student",
+    },
+    {
+        quote:
+            "I love how user-friendly the website is. The interface is intuitive, making it easy to navigate through different subjects and find the specific notes or PYQ I need.",
+        name: "Karan",
+        title: "Student",
     },
 ];
