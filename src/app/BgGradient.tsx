@@ -6,6 +6,7 @@ import Image from "next/image";
 import { CardHoverEffectDemo } from "./CardHover"
 import CodeBlock from "./CodeBlock";
 import Reveal from "./Reveal";
+import Link from "next/link";
 export function BackgroundGradientDemo(props: any) {
   return (
     <div className="w-auto md:w-[89%] lg:w-[89%] flex  flex-col md:flex-col lg:flex-row justify-between ml-8">
@@ -19,9 +20,10 @@ export function BackgroundGradientDemo(props: any) {
               {props.description}
             </p></Reveal>
 
+            <Link href="/signup">
             <button className="rounded-lg px-2 md:px-4 lg:px-6 py-4 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-zinc-800 text-center">
               Join Now
-            </button>
+            </button></Link>
           </div>
           <Reveal><div className="overflow-hidden">
             {

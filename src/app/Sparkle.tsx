@@ -3,6 +3,7 @@ import React from "react";
 import { SparklesCore } from "../components/ui/sparkles";
 import { TextGenerateEffectDemo } from "./TextGenEffect";
 import { FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
 
 export function SparklesPreview() {
   function clickHandler(){
@@ -38,12 +39,14 @@ export function SparklesPreview() {
         <TextGenerateEffectDemo></TextGenerateEffectDemo>
         <div className="flex  space-y-4 md:space-y-0 space-x-0 md:space-x-4 justify-center items-center gap-8">
           <div className="h-[100px]"></div>
+        <Link href="/signup">
         <button className=" w-20 md:w-30 lg:w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-[8px] md:text-[12px] lg:text-sm">
           <div className="flex justify-center items-center gap-2">Join now <FaArrowRight /></div>
-        </button>
+        </button></Link>
+        <Link href="/login">
         <button className="w-20 md:w-30 lg:w-40 h-10 rounded-xl bg-white text-black border border-black text-[8px] md:text-[12px] lg:text-sm" onClick={clickHandler}>
           Login
-        </button>
+        </button></Link>
       </div>
       </div>
     </div>
