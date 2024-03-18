@@ -1,36 +1,39 @@
 "use client";
-
+import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "../components/ui/3d-card";
 
-export function ThreeDCardDemo() {
+export function ThreeDCardDemo({sub,name}:any) {
   return (
-    <CardContainer className="inter-var ">
-      <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-[-1px_1px_31px_2px_#F2281A7E] dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.3] border-black/[0.1] w-800px sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+    <CardContainer className="inter-var w-[250px] ">
+      <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-[-1px_1px_31px_2px_#F2281A7E] dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[.3] border-black/[0.1] w-400px sm:w-[30rem] h-[300px] rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
-          className="text-xl font-bold text-neutral-600 dark:text-white"
+          className="text-xl font-bold  bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent"
         >
-          Make things float in air
+          {name}
         </CardItem>
-        <CardItem
+        {/* <CardItem
           as="p"
           translateZ="60"
           className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
         >
           Hover over this card to unleash the power of CSS perspective
+        </CardItem> */}
+        <CardItem translateZ="100" className="w-full mt-4 border-l-[1px]">
+        <div className='w-[90%]  '>
+                <ul className=' flex flex-col justify-between gap-2 mt-2 bg-gradient-to-r from-teal-200 to-teal-500 bg-clip-text text-transparent  '>
+                    <li ><div className='flex items-center gap-2 '><span className="w-[10px] h-[1px] bg-white"></span><Link href="" className='hover:bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent duration-200'>{sub[0]}</Link></div></li>
+                    <li ><div className='flex items-center gap-2 '><span className="w-[10px] h-[1px] bg-white"></span><Link href="" className='hover:bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent duration-200'>{sub[1]}</Link></div></li>
+                    <li ><div className='flex items-center gap-2'><span className="w-[10px] h-[1px] bg-white"></span><Link href="" className='hover:bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent duration-200'>{sub[2]}</Link></div></li>
+                    <li ><div className='flex items-center gap-2'><span className="w-[10px] h-[1px] bg-white"></span><Link href="" className='hover:bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent duration-200'>{sub[3]}</Link></div></li>
+                    <li ><div className='flex items-center gap-2'><span className="w-[10px] h-[1px] bg-white"></span><Link href="" className='hover:bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent duration-200'>{sub[4]}</Link></div></li>
+
+                </ul>
+            </div>
         </CardItem>
-        <CardItem translateZ="100" className="w-full mt-4">
-          <Image
-            src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            height="1000"
-            width="1000"
-            className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-            alt="thumbnail"
-          />
-        </CardItem>
-        <div className="flex justify-between items-center mt-20">
+        {/* <div className="flex justify-between items-center mt-20">
           <CardItem
             translateZ={20}
             as="button"
@@ -45,7 +48,7 @@ export function ThreeDCardDemo() {
           >
             Sign up
           </CardItem>
-        </div>
+        </div> */}
       </CardBody>
     </CardContainer>
   );

@@ -20,12 +20,12 @@ export function LampDemo({title,description,codeblock}:any) {
         {title}
         <p className=' w-11/12 text-2xl mt-6'>{description}</p>
       </motion.h1>
-      <div className={`w-[90%] flex flex-col gap-2 font-bold font-mono bg-gradient-to-r from-teal-200 to-teal-500 bg-clip-text text-transparent pr-1 text-2xl`}>
+      {/* <div className={`w-[90%] flex flex-col gap-2 font-bold font-mono bg-gradient-to-r from-teal-200 to-teal-500 bg-clip-text text-transparent pr-1 text-2xl`}>
                  <TypeAnimation sequence={[codeblock, 5000, ""]} repeat={Infinity} cursor={true} style={
                     {whiteSpace:"pre-line",
                 display:'block'}
                  } omitDeletionAnimation={true}></TypeAnimation>
-               </div>
+               </div> */}
     </LampContainer>
   );
 }

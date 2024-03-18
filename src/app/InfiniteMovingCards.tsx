@@ -5,7 +5,7 @@ import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
 import Reveal from "./Reveal";
 export function InfiniteMovingCardsDemo() {
     return (
-        <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden ">
+        <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden mb-[14rem]">
             <div className="w-full flex justify-center text-center">
                 <h1 className="text-center flex font-bold text-2xl md:text-3xl lg:text-5xl mb-8 w-[80%] justify-center items-center">Students <span className="bg-gradient-to-r from-teal-200 to-teal-500 bg-clip-text text-transparent ">Testimonial</span></h1>
             </div>  

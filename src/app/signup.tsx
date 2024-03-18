@@ -15,7 +15,7 @@ export function SignupFormDemo({check}:any) {
     console.log("Form submitted");
   };
   return (
-    <div className="max-w-md h-auto w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 my-24 mb-10 shadow-input bg-white dark:bg-black  border-slate-700 border-[.25px] ">
+    <div className="max-w-md h-auto w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 my-24  shadow-input bg-white dark:bg-black  border-slate-700 border-[.25px] mb-[14rem] ">
       <p className="text-neutral-600 text-2xl max-w-sm mt-2 dark:text-white text-center">
         {
             check?("SignUp"):("Login")

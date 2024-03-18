@@ -200,7 +200,7 @@ const Dept = [
 export default function NotesAndPyqs({ index }: any) {
   
   return (
-    <div className='w-full flex justify-center mt-18  bg-slate-950'>
+    <div className='w-full flex justify-center mt-18  bg-slate-950 h-[1800px]'>
       <div className='w-[90%] mx-auto flex flex-col mb-16'>
         <div className='text-center flex flex-col justify-center items-center gap-12 '>
           {/* heading */}
@@ -210,14 +210,13 @@ export default function NotesAndPyqs({ index }: any) {
         </div>
         {/* notes and pyqs */}
         <div className='flex flex-col justify-between items-center mt-8'>
-          <h1 className='text-left text-2xl my-6 '>Notes & PYQs</h1>
-          <div className='grid grid-cols-4 gap-16 '>
+          <h1 className='text-left text-3xl my-14 bg-gradient-to-r from-teal-200 to-teal-500 bg-clip-text text-transparent  '>Notes & PYQs</h1>
+          <div className='grid grid-cols-4 gap-y-24 gap-x-20'>
             {
               
               Dept[index].semester.map(({ id, subjects,name }: any) => (
-                <div key={id} className='flex flex-col justify-between items-center gap-4'>
-                  <h1>{name}</h1>
-                <Card  sub={subjects}></Card>
+                <div key={id} className='flex flex-col justify-between items-center '>
+                <Card  sub={subjects} name={name}></Card>
                 </div>
               ))
               }
