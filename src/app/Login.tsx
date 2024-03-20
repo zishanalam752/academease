@@ -1,110 +1,63 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
+import React from "react";
+import { Label } from "../components/ui/label";
+import { Input } from "../components/ui/input";
 import { cn } from "@/utils/cn";
 import {
   IconBrandGithub,
   IconBrandGoogle,
   IconBrandOnlyfans,
 } from "@tabler/icons-react";
-import { useRouter } from "next/navigation";
-import Link from "next/link";
-import { toast } from "sonner";
-import axios from "axios";
 
-export function SignupFormDemo() {
-  const router=useRouter();
-  const[user,setUser]=React.useState({firstName:"",lastName:"",email:"",password:"",confirmpassword:"",rollno:""});
-  const[buttonDisabled, setButtonDisabled]=React.useState(false);
-  const [loading,setLoading]=React.useState(false);
-  useEffect(() => {
-         if(user.email.length>0&& user.password.length>0&&user.firstName.length>0&& user.lastName.length>0&&user.rollno.length>0){
-            setButtonDisabled(false);
-         }
-         else{
-            setButtonDisabled(true);
-         }
-  },[user])
-  function handleChange(e:any) {
-    console.log(user);
-    setUser(prevState=>{
-        return{
-            ...prevState,
-            [e.target.name]: e.target.value
-        }
-    })
-  }
-  const submitHandler=async()=>{
-    try {
-        setLoading(true);
-        const response=await axios.post("/api/users/signup",user);
-        console.log("Signup success",response.data);
-        router.push("/login")
-    } catch (error:any) {
-        console.log("Signup failed",error.message)
-      toast.error(error.message);  
-    }
-    finally{
-        setLoading(false);
-    }
-  }
+export function LoginFormDemo({check}:any) {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log("Form submitted");
+  };
   return (
-    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
-      <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200 text-center">
-        {loading?("Processing"):("Signup")}
-      </h2>
-      
+    <div className="max-w-md h-auto w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 my-24  shadow-input bg-white dark:bg-black  border-slate-700 border-[.25px] mb-[14rem] ">
+      <p className="text-neutral-600 text-2xl max-w-sm mt-2 dark:text-white text-center">
+        {
+            check?("SignUp"):("Login")
+        }
+      </p>
 
-      <form className="my-8" onSubmit={submitHandler} >
-        <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
+      <form className="my-8" onSubmit={handleSubmit}>
+        {check&&<div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
           <LabelInputContainer>
-            <Label htmlFor="firstName">First name</Label>
-            <Input id="firstName" placeholder="Tyler" type="text" value={user.firstName} name="firstName"  onChange={handleChange} required />
+            <Label htmlFor="firstname">First name</Label>
+            <Input id="firstname" placeholder="Tyler" type="text" />
           </LabelInputContainer>
           <LabelInputContainer>
-            <Label htmlFor="lastName">Last name</Label>
-            <Input id="lastName" placeholder="Durden" type="text" value={user.lastName} name="lastName"   onChange={handleChange} required />
+            <Label htmlFor="lastname">Last name</Label>
+            <Input id="lastname" placeholder="Durden" type="text" />
           </LabelInputContainer>
-        </div>
-        <LabelInputContainer className="mb-4">
-        <Label htmlFor="rollno">Roll No.</Label>
-          <Input id="rollno" placeholder="eg: 12912032" type="text" value={user.rollno} name="rollno"  onChange={handleChange} required />
-        </LabelInputContainer> 
+        </div>}
         <LabelInputContainer className="mb-4">
           <Label htmlFor="email">Email Address</Label>
-          <Input id="email" placeholder="projectmayhem@fc.com" type="email" value={user.email} name="email"  onChange={handleChange} required />
+          <Input id="email" placeholder="projectmayhem@fc.com" type="email" />
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="password">Password</Label>
-          <Input id="password" placeholder="••••••••" type="password" value={user.password} name="password" onChange={handleChange} required />
+          <Input id="password" placeholder="••••••••" type="password" />
         </LabelInputContainer>
-        <LabelInputContainer className="mb-8">
-          <Label htmlFor="confirmpassword">Confirm password</Label>
+        {check&&<LabelInputContainer className="mb-8">
+          <Label htmlFor="twitterpassword">Confirm password</Label>
           <Input
             id="confirmpassword"
             placeholder="••••••••"
             type="confirmpassword"
-            value={user.confirmpassword}
-            onChange={handleChange}
-            name="confirmpassword"
-            required
           />
-        </LabelInputContainer>
+        </LabelInputContainer>}
 
         <button
           className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
           type="submit"
-
         >
-         {
-            buttonDisabled?("No signup (please fill all feilds)"):("signup")
-         }
+          {check?('Sign up'):('Login')} &rarr;
           <BottomGradient />
         </button>
-        <div className="text-[13px] text-center mt-3">
-        <Link href="/login" className="">Visit  Login Page &rarr;</Link>
-        </div>
+
         <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
 
         <div className="flex flex-col space-y-4">

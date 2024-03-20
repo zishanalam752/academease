@@ -1,10 +1,10 @@
 import React from 'react'
-import { SignupFormDemo } from '../signup'
+import { LoginFormDemo } from '../Login'
 
 export default function page() {
   return (
     <div className='w-full h-full'>
-      <SignupFormDemo check={false}></SignupFormDemo>
+      <LoginFormDemo check={false}></LoginFormDemo>
     </div>
   )
 }
