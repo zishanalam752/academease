@@ -34,15 +34,15 @@ export default function page() {
          }
   },[user])
   function handleChange(e:any) {
-    console.log(user);
+    // console.log(user);
+    e.preventDefault();
     setUser((prevData) => ({
       ...prevData,
       [e.target.name]: e.target.value,
     }))
   }
-  const submitHandler=async(e:any)=>{
+  const submitHandler=async()=>{
     try {
-      e.preventDefault();
         setLoading(true);
         const response=await axios.post("/api/users/signup",user);
         console.log("Signup success",response.data);

@@ -8,13 +8,20 @@ connect();
 export async function POST(request:NextRequest){
     try {
         const reqBody=await request.json()
-        const {firstName,lastName,email,password,rollno}=reqBody;  
+        const {firstName,lastName,email,password,rollno,confirmpassword}=reqBody;  
         console.log(reqBody)
         if(!firstName || !lastName  ||!email||!password||!rollno){
             return NextResponse.json({
                 success:false,
                 message: 'All fields are required'
             },{status:400})
+        }
+        if(password!==confirmpassword){
+            return NextResponse.json({
+                success:false,
+                message:"Password and Confirm password doesnot matched",
+
+            },{status:409})
         }
       const user=await User.findOne({email});
       if(user){

@@ -3,12 +3,11 @@ const userModel =new mongoose.Schema({
     firstName:{
         type:String,
         required:[true,"please provide your first name"],
-        unique:true   
+           
     },
     lastName:{
         type:String,
         required:[true,"please provide your last name"],
-        unique:true
     },
     email:{
         type:String,

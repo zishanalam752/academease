@@ -1,18 +1,8 @@
-import Image from "next/image";
+
 import { BackgroundGradientDemo } from "./BgGradient";
-// import { Spotlight } from "@/components/ui/Spotlight";
-import { SpotlightPreview } from "./Spotlight";
-import lottie from 'lottie-react';
-import animation from "../assets/Animation - 1709914625963.gif"
-import { HeroParallaxDemo } from "./HeroParlx";
 import { SparklesPreview } from "./Sparkle";
-import { TypewriterEffectSmoothDemo } from "./TypeWriter";
-import { ThreeDCardDemo } from "./3DCard";
 import { HeroScrollDemo } from "./HeroScroll";
-import { TailwindcssButtons } from "./Button"
 import Reveal from "./Reveal";
-import Navbar from "./Navbar";
-import Link from "next/link";
 import { AnimatedTooltipPreview } from "./Tooltip";
 import { InfiniteMovingCardsDemo } from "./InfiniteMovingCards";
 const content = [

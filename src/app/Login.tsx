@@ -1,60 +1,83 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { Label } from "../components/ui/label";
 import { Input } from "../components/ui/input";
 import { cn } from "@/utils/cn";
+import axios from "axios";
+import {useRouter} from "next/navigation"
 import {
   IconBrandGithub,
   IconBrandGoogle,
   IconBrandOnlyfans,
 } from "@tabler/icons-react";
+import { toast } from "sonner";
 
-export function LoginFormDemo({check}:any) {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("Form submitted");
-  };
+
+export function LoginFormDemo() {
+  const router=useRouter();
+  const [user,setUser]=React.useState({
+    rollno:"",
+    password:""
+  })
+  const [loading,setLoading]=React.useState(false);
+  const [buttonDisabled,setButtonDisabled]=React.useState(true)
+ const handleSubmit=async()=>{
+    try {
+         setLoading(true);
+         if (user.rollno==="") throw new Error("Roll No is required");
+         else if (user.password=="" )throw new Error ("Password is required");
+
+         const response=await axios.post("/api/users/login",user);
+         console.log("Login success",response.data);
+         toast.success("Login success");
+         router.push("/profile");
+        //  console.log(response)
+    } catch (error:any) {
+     console.log("Error occur while login",error.message)
+     toast.error("Something went wrong")
+    }
+    finally{
+      setLoading(false);
+    }
+ }
+  function handleChange(e:any){
+     e.preventDefault();
+     setUser((prevData)=>({
+         ...prevData,
+         [e.target.name]:e.target.value
+     }))
+     console.log(user)
+  }
+  useEffect(()=>{
+    if(user.rollno.length>0&& user.password.length>0){
+       setButtonDisabled(false);
+    }
+    else{
+       setButtonDisabled(true);
+    }
+},[user])
   return (
     <div className="max-w-md h-auto w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 my-24  shadow-input bg-white dark:bg-black  border-slate-700 border-[.25px] mb-[14rem] ">
       <p className="text-neutral-600 text-2xl max-w-sm mt-2 dark:text-white text-center">
         {
-            check?("SignUp"):("Login")
+          loading?("Processing"):("Login")
         }
       </p>
 
       <form className="my-8" onSubmit={handleSubmit}>
-        {check&&<div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
-          <LabelInputContainer>
-            <Label htmlFor="firstname">First name</Label>
-            <Input id="firstname" placeholder="Tyler" type="text" />
-          </LabelInputContainer>
-          <LabelInputContainer>
-            <Label htmlFor="lastname">Last name</Label>
-            <Input id="lastname" placeholder="Durden" type="text" />
-          </LabelInputContainer>
-        </div>}
         <LabelInputContainer className="mb-4">
-          <Label htmlFor="email">Email Address</Label>
-          <Input id="email" placeholder="projectmayhem@fc.com" type="email" />
+          <Label htmlFor="rollno">Roll No.</Label>
+          <Input id="rollno" placeholder="eg: 12912032" type="rollno" value={user.rollno} name="rollno" onChange={handleChange} required />
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="password">Password</Label>
-          <Input id="password" placeholder="••••••••" type="password" />
+          <Input id="password" placeholder="••••••••" type="password" value={user.password} name="password" onChange={handleChange} required />
         </LabelInputContainer>
-        {check&&<LabelInputContainer className="mb-8">
-          <Label htmlFor="twitterpassword">Confirm password</Label>
-          <Input
-            id="confirmpassword"
-            placeholder="••••••••"
-            type="confirmpassword"
-          />
-        </LabelInputContainer>}
-
         <button
           className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
           type="submit"
         >
-          {check?('Sign up'):('Login')} &rarr;
+          {"Login"} &rarr;
           <BottomGradient />
         </button>
 
