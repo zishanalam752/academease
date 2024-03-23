@@ -8,7 +8,7 @@ import {useRouter} from "next/navigation";
 
 export default function ProfilePage() {
     const router = useRouter()
-    const [data, setData] = useState("nothing")
+    const [data, setData] = React.useState(null)
     const logout = async () => {
         try {
             await axios.get('/api/users/logout')
@@ -21,9 +21,10 @@ export default function ProfilePage() {
     }
 
     const getUserDetails = async () => {
-        const res = await axios.get('/api/users/me')
+        const res = await axios.get('/api/users/userdata')
         console.log(res.data);
-        setData(res.data.data._id)
+        console.log(res.data.data)
+        setData(res.data.data)
     }
 
     return (
@@ -31,8 +32,18 @@ export default function ProfilePage() {
             <h1>Profile</h1>
             <hr />
             <p>Profile page</p>
-            <h2 className="p-1 rounded bg-green-500">{data === 'nothing' ? "Nothing" : <Link href={`/profile/${data}`}>{data}
-            </Link>}</h2>
+            {
+                data===null ? ("Nothing"):(
+                    <div>
+                        <p>{data.name}</p>
+                        <p>{data.branch}</p>
+                        <p>{data.rollno}</p>
+                        <p>{data.section}</p>
+                        <p>{data.subsection}</p>
+
+                    </div>
+                )
+            }
         <hr />
         <button
         onClick={logout}

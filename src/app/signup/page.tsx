@@ -1,5 +1,5 @@
-"use client";
-import React, { useEffect } from "react";
+"use client"
+import React, { useState, useEffect } from "react";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/utils/cn";
@@ -14,97 +14,120 @@ import { toast } from "sonner";
 import axios from "axios";
 export default function page() {
   
-  const router=useRouter();
-  const[user,setUser]=React.useState({firstName:"",lastName:"",email:"",password:"",confirmpassword:"",rollno:""});
-  const[buttonDisabled, setButtonDisabled]=React.useState(false);
-  const [loading,setLoading]=React.useState(false);
+  const router = useRouter();
+  const [user, setUser] = React.useState({
+    email: "",
+    password: "",
+    confirmpassword: "",
+    rollno: "",
+  });
+  const [buttonDisabled, setButtonDisabled] = React.useState(true);
+  const [loading, setLoading] = React.useState(false);
+
   useEffect(() => {
-         if(user.email.length>0&& user.password.length>0&&user.firstName.length>0&& user.lastName.length>0&&user.rollno.length>0){
-            setButtonDisabled(false);
-         }
-         else{
-            setButtonDisabled(true);
-         }
-  },[user])
+    if (
+      user.email.length > 0 &&
+      user.password.length > 0 &&
+      user.rollno.length > 0
+    ) {
+      setButtonDisabled(false);
+    } else {
+      setButtonDisabled(true);
+    }
+  }, [user]);
+
   function handleChange(e:any) {
-    // console.log(user);
     e.preventDefault();
     setUser((prevData) => ({
       ...prevData,
       [e.target.name]: e.target.value,
-    }))
+    }));
   }
-  const submitHandler=async()=>{
+
+  const submitHandler = async () => {
     try {
-        setLoading(true);
-        const response=await axios.post("/api/users/signup",user);
-        console.log("Signup success",response.data);
-        router.push('/login')
+      setLoading(true);
+      const response = await axios.post("/api/users/signup", user);
+      console.log("Signup success", response.data);
+      router.push("/login");
     } catch (error:any) {
-        console.log("Signup failed",error.message)
-      toast.error(error.message);  
+      console.log("Signup failed", error.message);
+      toast.error(error.message);
+    } finally {
+      setLoading(false);
     }
-    finally{
-        setLoading(false);
-    }
-  }
+  };
   return (
-    <div className='w-full h-[1050px] mt-[80px]'>
-       <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
-      <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200 text-center">
-        {loading?("Processing"):("Signup")}
-      </h2>
-      
+    <div className="w-full h-[1050px] mt-[80px]">
+      <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
+        <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200 text-center">
+          {loading ? "Processing" : "Signup"}
+        </h2>
 
-      <form className="my-8" onSubmit={submitHandler} >
-        <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
-          <LabelInputContainer>
-            <Label htmlFor="firstName">First name</Label>
-            <Input id="firstName" placeholder="Tyler" type="text" value={user.firstName} name="firstName"  onChange={handleChange} required />
+        <form className="my-8" onSubmit={submitHandler}>
+          
+          <LabelInputContainer className="mb-4">
+            <Label htmlFor="rollno">Roll No.</Label>
+            <Input
+              id="rollno"
+              placeholder="eg: 12912032"
+              type="text"
+              value={user.rollno}
+              name="rollno"
+              onChange={handleChange}
+              required
+            />
           </LabelInputContainer>
-          <LabelInputContainer>
-            <Label htmlFor="lastName">Last name</Label>
-            <Input id="lastName" placeholder="Durden" type="text" value={user.lastName} name="lastName"   onChange={handleChange} required />
+          <LabelInputContainer className="mb-4">
+            <Label htmlFor="email">Email Address</Label>
+            <Input
+              id="email"
+              placeholder="projectmayhem@fc.com"
+              type="email"
+              value={user.email}
+              name="email"
+              onChange={handleChange}
+              required
+            />
           </LabelInputContainer>
-        </div>
-        <LabelInputContainer className="mb-4">
-        <Label htmlFor="rollno">Roll No.</Label>
-          <Input id="text" placeholder="eg: 12912032" type="number" value={user.rollno} name="rollno"  onChange={handleChange} required />
-        </LabelInputContainer> 
-        <LabelInputContainer className="mb-4">
-          <Label htmlFor="email">Email Address</Label>
-          <Input id="email" placeholder="projectmayhem@fc.com" type="email" value={user.email} name="email"  onChange={handleChange} required />
-        </LabelInputContainer>
-        <LabelInputContainer className="mb-4">
-          <Label htmlFor="password">Password</Label>
-          <Input id="password" placeholder="••••••••" type="password" value={user.password} name="password" onChange={handleChange} required />
-        </LabelInputContainer>
-        <LabelInputContainer className="mb-8">
-          <Label htmlFor="confirmpassword">Confirm password</Label>
-          <Input
-            id="confirmpassword"
-            placeholder="••••••••"
-            type="confirmpassword"
-            value={user.confirmpassword}
-            onChange={handleChange}
-            name="confirmpassword"
-            required
-          />
-        </LabelInputContainer>
+          <LabelInputContainer className="mb-4">
+            <Label htmlFor="password">Password</Label>
+            <Input
+              id="password"
+              placeholder="••••••••"
+              type="password"
+              value={user.password}
+              name="password"
+              onChange={handleChange}
+              required
+            />
+          </LabelInputContainer>
+          <LabelInputContainer className="mb-8">
+            <Label htmlFor="confirmpassword">Confirm password</Label>
+            <Input
+              id="confirmpassword"
+              placeholder="••••••••"
+              type="password"
+              value={user.confirmpassword}
+              name="confirmpassword"
+              onChange={handleChange}
+              required
+            />
+          </LabelInputContainer>
 
-        <button
-          className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
-          type="submit"
-
-        >
-         {
-            buttonDisabled?("No signup (please fill all feilds)"):("signup")
-         }
-          <BottomGradient />
-        </button>
-        <div className="text-[13px] text-center mt-3">
-        <Link href="/login" className="">Visit  Login Page &rarr;</Link>
-        </div>
+          <button
+            className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
+            type="submit"
+            disabled={buttonDisabled}
+          >
+            {loading ? "Processing" : "Signup"}
+            <BottomGradient />
+          </button>
+          <div className="text-[13px] text-center mt-3">
+            <Link href="/login" className="">
+              Visit Login Page &rarr;
+            </Link>
+          </div>
         <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
 
         <div className="flex flex-col space-y-4">
