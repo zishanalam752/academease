@@ -10,7 +10,7 @@ export async function POST(request:NextRequest){
         const reqBody=await request.json()
         const {firstName,lastName,email,password,rollno,confirmpassword}=reqBody;  
         console.log(reqBody)
-        if(!firstName || !lastName  ||!email||!password||!rollno){
+        if(!firstName || !lastName  ||!email||!password||!rollno||!confirmpassword){
             return NextResponse.json({
                 success:false,
                 message: 'All fields are required'
@@ -30,16 +30,24 @@ export async function POST(request:NextRequest){
             message:'User already exists.'
         },{status:400})
       }
+      if (isNaN(Number(rollno))) {
+        return NextResponse.json({
+            success: false,
+            message: 'Invalid Roll Number!'
+        }, { status: 400 })
+    }
+    
       //hash password
       const salt = await bcryptjs.genSalt(10);
       const hashedPassword=await bcryptjs.hash(password,salt)
+
       
       const newUser=new User({
           firstName,
           lastName,
           email,
           password:hashedPassword,
-          rollno
+          rollno,
       })
      const savedUser= await newUser.save();
       console.log(savedUser)

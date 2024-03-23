@@ -6,9 +6,6 @@ import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 
 export function SparklesPreview() {
-  function clickHandler(){
-    
-  }
   return (
     <div className="h-auto w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md mt-6">
       <h1 className="md:text-6xl text-5xl lg:text-7xl font-bold text-center text-white relative z-20">
@@ -44,7 +41,7 @@ export function SparklesPreview() {
           <div className="flex justify-center items-center gap-2">Join now <FaArrowRight /></div>
         </button></Link>
         <Link href="/login">
-        <button className="w-20 md:w-30 lg:w-40 h-10 rounded-xl bg-white text-black border border-black text-[8px] md:text-[12px] lg:text-sm" onClick={clickHandler}>
+        <button className="w-20 md:w-30 lg:w-40 h-10 rounded-xl bg-white text-black border border-black text-[8px] md:text-[12px] lg:text-sm" >
           Login
         </button></Link>
       </div>

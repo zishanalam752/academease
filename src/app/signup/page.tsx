@@ -1,8 +1,5 @@
-
 "use client";
-// import { SignupFormDemo } from '../Signup'
-
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/utils/cn";
@@ -16,15 +13,11 @@ import Link from "next/link";
 import { toast } from "sonner";
 import axios from "axios";
 export default function page() {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+  
   const router=useRouter();
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const[user,setUser]=React.useState({firstName:"",lastName:"",email:"",password:"",confirmpassword:"",rollno:""});
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const[buttonDisabled, setButtonDisabled]=React.useState(false);
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [loading,setLoading]=React.useState(false);
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
          if(user.email.length>0&& user.password.length>0&&user.firstName.length>0&& user.lastName.length>0&&user.rollno.length>0){
             setButtonDisabled(false);
@@ -46,7 +39,7 @@ export default function page() {
         setLoading(true);
         const response=await axios.post("/api/users/signup",user);
         console.log("Signup success",response.data);
-        router.push("/login")
+        router.push('/login')
     } catch (error:any) {
         console.log("Signup failed",error.message)
       toast.error(error.message);  
@@ -76,7 +69,7 @@ export default function page() {
         </div>
         <LabelInputContainer className="mb-4">
         <Label htmlFor="rollno">Roll No.</Label>
-          <Input id="rollno" placeholder="eg: 12912032" type="text" value={user.rollno} name="rollno"  onChange={handleChange} required />
+          <Input id="text" placeholder="eg: 12912032" type="number" value={user.rollno} name="rollno"  onChange={handleChange} required />
         </LabelInputContainer> 
         <LabelInputContainer className="mb-4">
           <Label htmlFor="email">Email Address</Label>

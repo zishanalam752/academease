@@ -4,37 +4,31 @@ import { Label } from "../../components/ui/label";
 import { Input } from "../../components/ui/input";
 import { cn } from "@/utils/cn";
 import axios from "axios";
-import {useRouter} from "next/navigation"
+
 import {
   IconBrandGithub,
   IconBrandGoogle,
   IconBrandOnlyfans,
 } from "@tabler/icons-react";
-import { toast } from "sonner";
+import {useRouter} from "next/navigation"
+import { toast } from "react-hot-toast";
 import Link from "next/link";
 
 export default function page() {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const router=useRouter();
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const [user,setUser]=React.useState({
+  const router = useRouter()
+  const [login,setLogin]=React.useState({
     rollno:"",
     password:""
   })
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const[buttonDisabled,setButtonDisabled]=React.useState(true)
   const [loading,setLoading]=useState(false);
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const [buttonDisabled,setButtonDisabled]=React.useState(true)
  const handleSubmit=async()=>{
     try {
          setLoading(true);
-         if (user.rollno==="") throw new Error("Roll No is required");
-         else if (user.password=="" )throw new Error ("Password is required");
-
-         const response=await axios.post("/api/users/login",user);
+         const response=await axios.post("/api/users/login",login);
          console.log("Login success",response.data);
          toast.success("Login success");
-         router.push("/");
+         router.push("/profile");
         //  console.log(response)
     } catch (error:any) {
      console.log("Login Failed",error.message)
@@ -46,21 +40,20 @@ export default function page() {
  }
   function handleChange(e:any){
     e.preventDefault();
-     setUser((prevData)=>({
+     setLogin((prevData)=>({
          ...prevData,
          [e.target.name]:e.target.value
      }))
     //  console.log(user)
   }
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(()=>{
-    if(user.rollno.length>0&& user.password.length>0){
+    if(login.rollno.length>0&& login.password.length>0){
        setButtonDisabled(false);
     }
     else{
        setButtonDisabled(true);
     }
-},[user])
+},[login])
   return (
     <div className='w-full h-full'>
       <div className="max-w-md h-auto w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 my-24  shadow-input bg-white dark:bg-black  border-slate-700 border-[.25px] mb-[14rem] ">
@@ -73,11 +66,11 @@ export default function page() {
       <form className="my-8" onSubmit={handleSubmit}>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="rollno">Roll No.</Label>
-          <Input id="rollno" placeholder="eg: 12912032" type="rollno" value={user.rollno} name="rollno" onChange={handleChange} required />
+          <Input id="rollno" placeholder="eg: 12912032" type="rollno" value={login.rollno} name="rollno" onChange={handleChange} required />
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="password">Password</Label>
-          <Input id="password" placeholder="••••••••" type="password" value={user.password} name="password" onChange={handleChange} required />
+          <Input id="password" placeholder="••••••••" type="password" value={login.password} name="password" onChange={handleChange} required />
         </LabelInputContainer>
         <button
           className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
