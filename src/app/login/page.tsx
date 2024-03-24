@@ -4,8 +4,11 @@ import { Label } from "../../components/ui/label";
 import { Input } from "../../components/ui/input";
 import axios from "axios";
 import { useRouter } from "next/navigation";
-import { toast } from "react-hot-toast";
+import  {toast}  from "react-hot-toast";
 import Link from "next/link";
+import {Login,Logout} from "@/lib/features/auth-slice"
+import { UseDispatch, useDispatch } from "react-redux";
+import { AppDispatch } from "@/lib/store";
 
 import {
   IconBrandGithub,
@@ -14,6 +17,7 @@ import {
 } from "@tabler/icons-react";
 
 export default function LoginPage() {
+  const dispatch=useDispatch<AppDispatch>();
   const router = useRouter();
   const [login, setLogin] = useState({
     rollno: "",
@@ -27,12 +31,14 @@ export default function LoginPage() {
     try {
       setLoading(true);
       const response = await axios.post("/api/users/login", login);
-      console.log("Login success", response.data);
+      // console.log("Login success", response.data);
       toast.success("Login success");
       router.push("/profile");
+      dispatch(Login());
     } catch (error:any) {
-      console.log("Login Failed", error.message);
-      toast.error(error.message);
+      console.log("Login Failed", error);
+      toast.error("passwrd incorrect! or account not found!");
+
     } finally {
       setLoading(false);
     }

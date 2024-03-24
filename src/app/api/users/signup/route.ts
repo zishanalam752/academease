@@ -13,7 +13,7 @@ export async function POST(request: NextRequest) {
         const { email, password, rollno, confirmpassword } = reqBody;
 
         // Validate required fields
-        if ( !email || !password || !rollno || !confirmpassword) {
+        if (!email || !password || !rollno || !confirmpassword) {
             return NextResponse.json({
                 success: false,
                 message: 'All fields are required'
@@ -58,20 +58,20 @@ export async function POST(request: NextRequest) {
 
         // Save the new user to the database
         const savedUser = await newUser.save();
-        console.log(savedUser);
 
         // Return success response
         return NextResponse.json({
             success: true,
             data: savedUser,
             message: "User created successfully"
-        }, { status: 200 });
+        }, { status: 201 });
 
     } catch (error: any) {
         // Handle internal server errors
+        console.error("Signup error:", error.message);
         return NextResponse.json({
             success: false,
-            error: error.message
+            error: "Internal server error"
         }, { status: 500 });
     }
 }

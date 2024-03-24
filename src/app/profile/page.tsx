@@ -1,12 +1,17 @@
 "use client";
 import axios from "axios";
 import Link from "next/link";
-import React, {useState} from "react";
-import {toast} from "react-hot-toast";
-import {useRouter} from "next/navigation";
+import React, { useEffect, useState } from "react";
+import { toast } from "react-hot-toast";
+import { useRouter } from "next/navigation";
 
+import { Logout } from "@/lib/features/auth-slice"
+import { useDispatch } from "react-redux";
+import { AppDispatch, useAppSelector } from "@/lib/store";
 
 export default function ProfilePage() {
+    const dispatch = useDispatch<AppDispatch>();
+    const isAuth = useAppSelector((state) => state.authReducer.value.isAuth)
     const router = useRouter()
     const [data, setData] = React.useState(null)
     const logout = async () => {
@@ -14,7 +19,8 @@ export default function ProfilePage() {
             await axios.get('/api/users/logout')
             toast.success('Logout successful')
             router.push('/login')
-        } catch (error:any) {
+            dispatch(Logout())
+        } catch (error: any) {
             console.log(error.message);
             toast.error(error.message)
         }
@@ -26,6 +32,11 @@ export default function ProfilePage() {
         console.log(res.data.data)
         setData(res.data.data)
     }
+    useEffect(() => {
+        if (isAuth) {
+            getUserDetails();
+        }
+    }, [isAuth])
 
     return (
         <div className="flex flex-col items-center justify-center min-h-screen py-2">
@@ -33,7 +44,7 @@ export default function ProfilePage() {
             <hr />
             <p>Profile page</p>
             {
-                data===null ? ("Nothing"):(
+                data === null ? ("Nothing") : (
                     <div>
                         <p>{data.name}</p>
                         <p>{data.branch}</p>
@@ -44,15 +55,11 @@ export default function ProfilePage() {
                     </div>
                 )
             }
-        <hr />
-        <button
-        onClick={logout}
-        className="bg-blue-500 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-        >Logout</button>
-
-        <button
-        onClick={getUserDetails}
-        className="bg-green-800 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-        >GetUser Details</button></div>
+            <hr />
+            <button
+                onClick={logout}
+                className="bg-blue-500 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >Logout</button>
+        </div>
     )
 }
