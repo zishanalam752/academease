@@ -2,6 +2,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import { GrClose } from "react-icons/gr";
+import { FaAlignJustify } from "react-icons/fa";
 
 const Navbar: React.FC = () => {
   const [navbar, setNavbar] = useState<boolean>(false);
@@ -23,50 +25,51 @@ const Navbar: React.FC = () => {
                   onClick={() => setNavbar(!navbar)}
                 >
                   {navbar ? (
-                    <Image src="/close.svg" width={30} height={30} alt="logo" />
+                    <GrClose className='text-2xl text-slate-300' />
                   ) : (
-                    <Image
-                      src="/hamburger-menu.svg"
-                      width={30}
-                      height={30}
-                      alt="logo"
-                      className="focus:border-none active:border-none"
-                    />
+                    <FaAlignJustify className='text-2xl text-slate-300' />
                   )}
                 </button>
               </div>
             </div>
           </div>
-          <div>
+          <div className='flex justify-between'>
             <div
-              className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-                navbar ? 'p-12 md:p-0 block' : 'hidden'
-              }`}
-            >
+              className={`flex-1 flex-row justify-self-center pb-3  items-center mt-8 md:block md:pb-0 md:mt-0 ${navbar ? 'p-12 md:p-0 block' : 'hidden'
+                }`}
+               >
               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-                <li className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                <li className="pb-6 text-xl text-purple-600 py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900   md:hover:bg-transparent">
                   <Link href="/about" onClick={() => setNavbar(!navbar)}>
-                  About
+                    About
                   </Link>
                 </li>
                 <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link href="/blog" onClick={() => setNavbar(!navbar)}>
-                  Blogs
+                  <Link href="/" onClick={() => setNavbar(!navbar)}>
+                    Updates
+                  </Link>
+                </li>
+                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <Link href="/" onClick={() => setNavbar(!navbar)}>
+                    Review
                   </Link>
                 </li>
                 <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                   <Link href="/contactus" onClick={() => setNavbar(!navbar)}>
-                    Contact
+                    Contactus
                   </Link>
                 </li>
-                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link href="/projects" onClick={() => setNavbar(!navbar)}>
-                  Projects
-                  </Link>
+                <li className=' ml-16 w-20 md:w-24 lg:w-32 h-10 rounded-xl bg-white text-black border border-black text-[8px] md:text-[12px] lg:text-sm'>
+                 <Link href="/signup" className='flex justify-center items-center gap-2 h-full w-full lg:hover:text-lg md:hover:text-sm hover:text-[10px] duration-200'>Signup</Link>
+                </li>
+                <li className='ml-6 w-20 md:w-24 lg:w-32 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-[8px] md:text-[12px] lg:text-sm '>
+                 <Link href="/signup" className='flex justify-center items-center gap-2 w-full h-full lg:hover:text-lg md:hover:text-sm hover:text-[10px] duration-200'>login</Link>
                 </li>
               </ul>
+              
             </div>
           </div>
+          
         </div>
       </nav>
     </div>
