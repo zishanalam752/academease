@@ -2,7 +2,8 @@ import { connect } from "@/dbconfig/dbconfig";
 import User from "@/model/userModel";
 import { NextRequest, NextResponse } from "next/server";
 import bcryptjs from "bcryptjs";
-
+import { sendEmail } from "@/helper/mailer";
+import Student2022 from "@/model/studentModel"
 // Establish database connection
 connect();
 
@@ -44,7 +45,22 @@ export async function POST(request: NextRequest) {
                 message: 'Invalid Roll Number!'
             }, { status: 400 });
         }
+        // const checkEmail= email.split('@');
+        // if(isNaN(Number(checkEmail[0]))){
+        //     return NextResponse.json({
+        //         success :false ,
+        //         message:"Please enter valid Email id"
+        //     })
+        // }
+            const checkRollno=await Student2022.findOne({rollno})
+            // const checkEmailIdNum=await Student2022.findOne({rollno:checkEmail[0]});
 
+                if(!checkRollno  ) {
+                    return NextResponse.json({
+                        success:false,
+                        message:"RollNo or EmailId is wrong, please enter Domain mail and  correct Roll No."
+                    },{status:404});
+                } 
         // Hash password
         const salt = await bcryptjs.genSalt(10);
         const hashedPassword = await bcryptjs.hash(password, salt);
@@ -59,7 +75,12 @@ export async function POST(request: NextRequest) {
         // Save the new user to the database
         const savedUser = await newUser.save();
 
+
+        //send verification mail
+
+        await sendEmail({email, emailType: "VERIFY", userId: savedUser._id})
         // Return success response
+
         return NextResponse.json({
             success: true,
             data: savedUser,
