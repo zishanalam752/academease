@@ -117,7 +117,7 @@ export const Card = ({
             </div>
             <img
               src={user.image}
-              className="rounded-tr-md rounded-tl-md text-sm "
+              className="rounded-tr-md rounded-tl-md text-sm  aspect-square"
               alt="thumbnail"
             />
             <div className="p-4">

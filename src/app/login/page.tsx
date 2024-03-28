@@ -96,7 +96,11 @@ export default function LoginPage() {
             {loading ? "Processing" : "Login"} &rarr;
             <BottomGradient />
           </button>
-          <Link href="/signup">Go to Signup page</Link>
+          <div className="text-[13px] text-right mt-3">
+            <Link href="/login" className="">
+              Visit Signup Page &rarr;
+            </Link>
+          </div>
           <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
 
           <div className="flex flex-col space-y-4">

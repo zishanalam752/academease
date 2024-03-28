@@ -25,16 +25,14 @@ export default function ProfilePage() {
             toast.error(error.message)
         }
     }
-
-    const getUserDetails = async () => {
-        const res = await axios.get('/api/users/userdata')
-        console.log(res.data);
-        console.log(res.data.data)
-        setData(res.data.data)
-    }
+   async function  getDetails(){
+    const userdata=getUserDetails();
+    setData(await userdata)
+   }
+   
     useEffect(() => {
         if (isAuth) {
-            getUserDetails();
+           getDetails();
         }
     }, [isAuth])
 
@@ -62,4 +60,8 @@ export default function ProfilePage() {
             >Logout</button>
         </div>
     )
+}
+export const getUserDetails = async () => {
+    const res = await axios.get('/api/users/userdata')
+    return res.data.data;
 }

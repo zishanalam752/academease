@@ -31,15 +31,15 @@ export default function page() {
                             <h1 className='text-4xl font-bold text-left mb-2 '>Send  us a message!</h1>
                             <form action="#" className='gap-2 border-[1px] border-slate-500 bg-slate-900 py-6 pl-4 pr-2 rounded-sm'>
                                 <div className='flex justify-between items-center'>
-                                    <div className='flex flex-col items-left'><label htmlFor="name">Name</label>
-                                        <input type="text" placeholder="Name" id='name' className='bg-slate-900  border-[1px] p-1 pl-1 rounded-md' /></div>
-                                    <div> <label htmlFor="email">Email</label><br />
-                                        <input type="email" id="email" placeholder="Email Address" className='bg-slate-900 border-[1px] p-1 pl-1 rounded-md' /></div>
+                                    <div className='flex flex-col items-left'><label htmlFor="name" className=' text-slate-300'>Name</label>
+                                        <input type="text" placeholder="John Doe" id='name' className='bg-slate-900  border-[1px] p-1 pl-1 rounded-md border-slate-700' /></div>
+                                    <div> <label htmlFor="email" className=' text-slate-300'>Email</label><br />
+                                        <input type="email" id="email" placeholder="eg: 1234@email.com" className='bg-slate-900 border-[1px] p-1 pl-1 rounded-md border-slate-700' /></div>
                                 </div>
-                                <label htmlFor="phno">Phone Number</label><br />
-                                <input type="text" name="" id="phno" placeholder="Phone Number" className='bg-slate-900  border-[1px] p-1 pl-1 rounded-md' /><br />
-                                <label htmlFor="message" className='mt-3'>Message</label><br />
-                                <textarea name="" cols={30} rows={10} placeholder="Message" id="message" className='bg-slate-900 border-[1px] p-1 pl-1 rounded-md'></textarea><br />
+                                <label htmlFor="phno" className=' text-slate-300'>Phone Number</label><br />
+                                <input type="text" name="" id="phno" placeholder="eg: 1234567890" className='bg-slate-900  border-[1px] p-1 pl-1 rounded-md border-slate-700' /><br />
+                                <label htmlFor="message"  className=' text-slate-300 mt-3'>Type your message here!</label><br />
+                                <textarea name="" cols={30} rows={10} placeholder="Message" id="message" className='bg-slate-900 border-[1px] p-1 pl-1 rounded-md border-slate-700'></textarea><br />
                                 <button type="submit" className='bg-blue-600 p-1 px-1 rounded-md'>Submit</button>
                             </form>
                         </div>

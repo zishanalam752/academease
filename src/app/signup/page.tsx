@@ -34,14 +34,14 @@ export default function Page() {
     setButtonDisabled(!isValid);
   }, [user]);
 
-  function handleChange(e:any) {
+  function handleChange(e: any) {
     setUser((prevData) => ({
       ...prevData,
       [e.target.name]: e.target.value,
     }));
   }
 
-  const handleSubmit = async (e:any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     try {
       setLoading(true);
@@ -49,7 +49,7 @@ export default function Page() {
       // console.log("Signup success", response.data);
       toast.success("Account created successfully!");
       router.push("/login");
-    } catch (error:any) {
+    } catch (error: any) {
       console.error("Signup failed", error.message);
       toast.error("Failed to signup");
     } finally {
@@ -59,12 +59,12 @@ export default function Page() {
 
   return (
     <div className="w-full h-[1050px] mt-[80px]">
-      <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
+      <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black border-slate-700 border-[.25px]">
         <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200 text-center">
           {loading ? "Processing" : "Signup"}
         </h2>
 
-        <form className="my-8" onSubmit={handleSubmit}>
+        <form className="my-8 " onSubmit={handleSubmit} >
           <LabelInputContainer className="mb-4">
             <Label htmlFor="rollno">Roll No.</Label>
             <Input
@@ -106,7 +106,7 @@ export default function Page() {
             <Input
               id="confirmpassword"
               placeholder="••••••••"
-              type="password"
+              type="text"
               value={user.confirmpassword}
               name="confirmpassword"
               onChange={handleChange}

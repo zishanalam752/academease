@@ -1,5 +1,5 @@
 import mongoose  from "mongoose";
-
+import emailTemplate from "../app/mail/template/EmailTemplate"
 const OTPSchema = new mongoose.Schema({
 	email: {
 		type: String,
