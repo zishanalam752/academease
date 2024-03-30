@@ -31,10 +31,11 @@ export default function LoginPage() {
     try {
       setLoading(true);
       const response = await axios.post("/api/users/login", login);
-      // console.log("Login success", response.data);
+      console.log("Login success", response.data);
       toast.success("Login success");
       router.push("/profile");
-      dispatch(Login());
+      dispatch(SetToken(response.data.token));
+      dispatch(Login(response.data.user));
     } catch (error:any) {
       console.log("Login Failed", error);
       toast.error("passwrd incorrect! or account not found!");
