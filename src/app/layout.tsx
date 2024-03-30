@@ -5,7 +5,8 @@ import { useEffect,useRef } from "react";
 import Navbar from "./Navbar"
 import Footer from "./Footer";
 import { Toaster } from "react-hot-toast";
-import { ReduxProvider } from "@/lib/provider";
+// import { ReduxProvider } from "@/lib/provider";
+import { StoreProvider } from "@/store/StoreProvide";
 
 const inter = Poppins({
  weight:"600",
@@ -26,12 +27,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ReduxProvider>
+        <StoreProvider>
         <Navbar></Navbar>
         {children}
         <Footer></Footer>
         <Toaster></Toaster>
-        </ReduxProvider>
+        </StoreProvider>
         </body>
     </html>
   );

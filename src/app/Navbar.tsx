@@ -6,20 +6,20 @@ import { GrClose } from "react-icons/gr";
 import { FaAlignJustify } from "react-icons/fa";
 import StaggeredDropDown from './dropdown'
 // import { Login } from "@/lib/features/auth-slice"
-import { useDispatch } from "react-redux";
-import { getUserDetails } from './profile/page';
-import { AppDispatch, useAppSelector } from "@/lib/store";
+import { useDispatch,useSelector } from "react-redux";
+// import { getUserDetails } from './profile/page';
+import { AppDispatch, RootState } from "@/store/store";
 import axios from 'axios';
 // import { buttons } from './Button';
 const Navbar: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
-    const isAuth = useAppSelector((state) => state.authReducer.value.isAuth)
-    const [name,setName]=useState(null);
+  const isAuth =useSelector((state:RootState) => state.auth.isAuth);
+    const [name, setName] = useState<string | null>(null);
   const [navbar, setNavbar] = useState<boolean>(false);
   async function getName(){
-    const Name= await getUserDetails();
-    const firstname=Name.name.split(" ");
-    setName(firstname[0].toLowerCase().capitalize());
+    // const Name= await getUserDetails();
+    // const firstname=Name.name.split(" ");
+    // setName(firstname[0]);
   }
 
   useEffect(()=>{
@@ -89,7 +89,7 @@ const Navbar: React.FC = () => {
                }
                {
                  isAuth&& <button className='bg-white py-2 px-2 rounded-lg text-black font-bold text-xl mb-3'>
-                  <Link href="/profile" className='w-full h-full'></Link>Hi! {name}
+                  <Link href="/profile" className='w-full h-full'></Link>Hi!
                  </button>
                }
               </ul>
