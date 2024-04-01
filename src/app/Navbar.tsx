@@ -4,29 +4,21 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { GrClose } from "react-icons/gr";
 import { FaAlignJustify } from "react-icons/fa";
-import StaggeredDropDown from './dropdown'
+// import StaggeredDropDown from './dropdown'
 // import { Login } from "@/lib/features/auth-slice"
 import { useDispatch,useSelector } from "react-redux";
 // import { getUserDetails } from './profile/page';
 import { AppDispatch, RootState } from "@/store/store";
 import axios from 'axios';
+import { useGenerationStore } from '@/store/idea-generation';
 // import { buttons } from './Button';
 const Navbar: React.FC = () => {
-  const dispatch = useDispatch<AppDispatch>();
-  const isAuth =useSelector((state:RootState) => state.auth.isAuth);
-    const [name, setName] = useState<string | null>(null);
+const {isAuth,user} =useGenerationStore()
+console.log(user)
+  
   const [navbar, setNavbar] = useState<boolean>(false);
-  async function getName(){
-    // const Name= await getUserDetails();
-    // const firstname=Name.name.split(" ");
-    // setName(firstname[0]);
-  }
+ 
 
-  useEffect(()=>{
-    if(isAuth){
-    getName();
-    }
-  },[isAuth])
   return (
     <div className='w-full h-[20px]'>
       <nav className="w-full bg-black fixed top-0 left-0 right-0 z-30">

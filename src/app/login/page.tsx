@@ -6,10 +6,7 @@ import axios from "axios";
 import { useRouter } from "next/navigation";
 import  {toast}  from "react-hot-toast";
 import Link from "next/link";
-// import {Login,Logout} from "@/lib/features/auth-slice"
-import { UseDispatch, useDispatch } from "react-redux";
-// import { AppDispatch } from "@/lib/store";
-
+import { useGenerationStore } from "@/store/idea-generation";
 import {
   IconBrandGithub,
   IconBrandGoogle,
@@ -17,9 +14,9 @@ import {
 } from "@tabler/icons-react";
 
 export default function LoginPage() {
-  // const dispatch=useDispatch<AppDispatch>();
+  const {setuser} =useGenerationStore();
   const router = useRouter();
-  const [login, setLogin] = useState({
+  const [user, setUser] = useState({
     rollno: "",
     password: ""
   });
@@ -30,13 +27,14 @@ export default function LoginPage() {
     e.preventDefault();
     try {
       setLoading(true);
-      const response = await axios.post("/api/users/login", login);
+      const response = await axios.post("/api/users/login", user);
       console.log("Login success", response.data);
       toast.success("Login success");
-      // dispatch(Login());
+      setuser(response.data.user);
+      // console.log(response.data.user)
       router.push("/profile");
       // dispatch(SetToken(response.data.token));
-      
+  
     } catch (error:any) {
       console.log("Login Failed", error);
       toast.error("passwrd incorrect! or account not found!");
@@ -48,15 +46,15 @@ export default function LoginPage() {
 
   const handleChange = (e:any) => {
     const { name, value } = e.target;
-    setLogin((prevData) => ({
+    setUser((prevData) => ({
       ...prevData,
       [name]: value
     }));
   };
 
   useEffect(() => {
-    setButtonDisabled(!(login.rollno.length > 0 && login.password.length > 0));
-  }, [login]);
+    setButtonDisabled(!(user.rollno.length > 0 && user.password.length > 0));
+  }, [user]);
 
   return (
     <div className='w-full h-full'>
@@ -72,7 +70,7 @@ export default function LoginPage() {
               id="rollno"
               placeholder="eg: 12912032"
               type="text"
-              value={login.rollno}
+              value={user.rollno}
               name="rollno"
               onChange={handleChange}
               required
@@ -84,7 +82,7 @@ export default function LoginPage() {
               id="password"
               placeholder="••••••••"
               type="password"
-              value={login.password}
+              value={user.password}
               name="password"
               onChange={handleChange}
               required
@@ -99,7 +97,7 @@ export default function LoginPage() {
             <BottomGradient />
           </button>
           <div className="text-[13px] text-right mt-3">
-            <Link href="/login" className="">
+            <Link href="/user" className="">
               Visit Signup Page &rarr;
             </Link>
           </div>

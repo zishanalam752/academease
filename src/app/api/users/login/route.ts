@@ -4,6 +4,7 @@ import { connect } from "@/dbconfig/dbconfig";
 import bcryptjs from "bcryptjs";
 import User from "@/model/userModel";
 import jwt from "jsonwebtoken";
+import Student2022 from "@/model/studentModel";
 
 // Establish database connection
 connect();
@@ -58,12 +59,12 @@ export async function POST(request: NextRequest) {
         message: "Incorrect Password!",
       }, { status: 400 });
     }
-
+  //  const student=await Student2022.findOne({rollno});
     // Generate JWT token containing user data
     const tokenData = {
       id: user._id,
-      rollno: user.rollno,
-      email: user.email,
+      email:user.email,
+      rollno:user.rollno
     };
 
     // Sign the token with a secret key

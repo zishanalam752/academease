@@ -6,27 +6,27 @@ export interface AuthState {
   user: null | string;
 
 }
-export const initialSatate: AuthState = {
+export const initialState: AuthState = {
     isAuth: false,
     user: null,
 };
 const authSlice = createSlice({
     name: "auth",
-    initialState: initialSatate,
+    initialState,
     reducers: {
         login:(state)=> {
-            state.isAuth = true;
+            state.isAuth=true
         },
         logout:(state)=> {
             state.user = null;
             state.isAuth = false;
         },
-        setUser:(state, action: PayloadAction<string>)=> {
+        setuser:(state, action)=> {
             return { ...state, user: action.payload };
         },
     },
 });
 // Action creators are generated for each case reducer function
-export const { login, logout, setUser } = authSlice.actions;
-// /** @type {typeof authSlice.reducer} */
+export const { login, logout, setuser } = authSlice.actions;
+/** @type {typeof authSlice.reducer} */
 export const authReducer = authSlice.reducer;

@@ -32,37 +32,3 @@ body {
     text-wrap: balance;
   }
 }
-.contactus{
-  background-image: url(../assets/contactusbg.jpg);
-}
-*{
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-.side-click{
-  background-color: rgb(2, 6, 23);
-  color: aliceblue;
-}
-.side-click::after,
-.side-click::before{
-  content: '';
-  position: absolute;
-  right: 0;
-  width: 1rem;
-  height: 1rem;
-  background-color: rgb(248 250 252);
-}
-.side-click::before{
-  top: calc(1rem * -1);
-  border-radius: 0 0 100vw 0;
-  box-shadow: 10px 10px 0 10px rgb(2, 6, 23);
-}
-.side-click::after{
-  bottom: calc(1rem * -1);
-  border-radius: 0 100vw 0 0;
-  box-shadow: 10px -10px 0 10px rgb(2, 6, 23);
-}
-.side-hov{
-  background-color: rgb(211, 211, 211);
-  transition: all 200ms;
-}
