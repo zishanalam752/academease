@@ -1,0 +1,2077 @@
+[
+    {
+        "rollno": 12212001,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "21/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "20/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "12/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "28/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212002,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "19/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "13/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "29/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212003,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "18/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "14/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "30/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212004,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "17/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "15/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "31/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212005,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "20/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "22/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "16/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "32/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212006,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "23/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "15/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "30/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212007,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "20/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "16/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "31/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212008,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "21/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "16/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "30/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212009,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "20/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "15/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "32/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212010,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "22/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "17/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "31/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212011,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "22/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "16/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "32/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212012,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "20/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "15/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "31/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212013,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "19/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "14/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "30/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212014,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "23/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "17/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "33/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212015,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "21/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "16/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "32/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212016,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "20/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "15/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "31/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212017,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "19/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "14/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "30/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212018,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "23/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "17/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "33/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212019,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "21/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "16/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "32/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212020,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "20/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "15/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "31/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212021,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "19/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "14/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "30/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12222002,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "24/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "17/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "33/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212022,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "22/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "16/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "32/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212023,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "20/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "15/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "31/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212024,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "19/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "14/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "30/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212025,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "23/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "17/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "33/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212026,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "21/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "16/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "32/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212027,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "20/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "15/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "31/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212028,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "19/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "14/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "30/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212029,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "23/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "17/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "33/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212030,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "21/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "16/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "32/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212031,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "20/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "15/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "31/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212032,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "19/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "14/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "30/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212033,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "23/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "17/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "33/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212034,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "21/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "16/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "32/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212035,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "20/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "15/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "31/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212036,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "19/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "14/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "30/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212037,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "23/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "17/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "33/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212038,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "21/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "16/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "32/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212039,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "20/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "15/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "31/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212040,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "19/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "14/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "30/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212041,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "23/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "17/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "33/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12222007,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "22/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "16/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "32/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12112106,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "20/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "15/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "31/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212042,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "22/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "16/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "32/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212043,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "20/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "15/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "31/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212044,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "19/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "14/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "30/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212045,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "23/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "17/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "33/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212046,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "21/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "16/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "32/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212047,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "20/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "15/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "31/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212048,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "19/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "14/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "30/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212049,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "23/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "17/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "33/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212050,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "21/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "16/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "32/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212051,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "20/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "15/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "31/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212052,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "19/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "14/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "30/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212053,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "23/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "17/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "33/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212054,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "21/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "16/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "32/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212055,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "20/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "15/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "31/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212056,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "19/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "14/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "30/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212057,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "23/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "17/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "33/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212058,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "21/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "16/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "32/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12212059,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "20/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "15/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "31/33"
+            }
+        ]
+    },
+    {
+        "rollno": 12222008,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "22/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "16/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "32/33"
+            }
+        ]
+    },
+    {
+        "rollno": 122112062,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "22/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "16/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "32/33"
+            }
+        ]
+    },
+    {
+        "rollno": 122112063,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "20/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "15/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "31/33"
+            }
+        ]
+    },
+    {
+        "rollno": 122112064,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "19/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "14/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "30/33"
+            }
+        ]
+    },
+    {
+        "rollno": 122112065,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "23/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "17/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "33/33"
+            }
+        ]
+    },
+    {
+        "rollno": 122112066,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "21/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "16/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "32/33"
+            }
+        ]
+    },
+    {
+        "rollno": 122112067,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "20/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "15/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "31/33"
+            }
+        ]
+    },
+    {
+        "rollno": 122112068,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "19/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "14/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "30/33"
+            }
+        ]
+    },
+    {
+        "rollno": 122112069,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "23/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "17/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "33/33"
+            }
+        ]
+    },
+    {
+        "rollno": 122112070,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "21/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "16/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "32/33"
+            }
+        ]
+    },
+    {
+        "rollno": 122112071,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "20/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "15/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "31/33"
+            }
+        ]
+    },
+    {
+        "rollno": 122112072,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "19/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "14/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "30/33"
+            }
+        ]
+    },
+    {
+        "rollno": 122112073,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "23/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "17/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "33/33"
+            }
+        ]
+    },
+    {
+        "rollno": 122112074,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "21/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "16/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "32/33"
+            }
+        ]
+    },
+    {
+        "rollno": 122112075,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "20/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "15/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "31/33"
+            }
+        ]
+    },
+    {
+        "rollno": 122112076,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "19/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "14/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "30/33"
+            }
+        ]
+    },
+    {
+        "rollno": 122112077,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "23/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "17/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "33/33"
+            }
+        ]
+    },
+    {
+        "rollno": 122112078,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "21/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "16/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "24/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "32/33"
+            }
+        ]
+    },
+    {
+        "rollno": 122112079,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "20/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "15/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "23/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "31/33"
+            }
+        ]
+    },
+    {
+        "rollno": 122112080,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "19/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "14/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "22/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "30/33"
+            }
+        ]
+    },
+    {
+        "rollno": 122112081,
+        "subjects": [
+            {
+                "subject": "DBMS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "Scripting",
+                "attendance": "23/27"
+            },
+            {
+                "subject": "CN",
+                "attendance": "17/17"
+            },
+            {
+                "subject": "OS",
+                "attendance": "25/25"
+            },
+            {
+                "subject": "AI",
+                "attendance": "33/33"
+            }
+        ]
+    }
+]

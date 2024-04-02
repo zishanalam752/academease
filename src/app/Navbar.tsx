@@ -6,18 +6,26 @@ import { GrClose } from "react-icons/gr";
 import { FaAlignJustify } from "react-icons/fa";
 // import StaggeredDropDown from './dropdown'
 // import { Login } from "@/lib/features/auth-slice"
-import { useDispatch,useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 // import { getUserDetails } from './profile/page';
 import { AppDispatch, RootState } from "@/store/store";
 import axios from 'axios';
 import { useGenerationStore } from '@/store/idea-generation';
 // import { buttons } from './Button';
 const Navbar: React.FC = () => {
-const {isAuth,user} =useGenerationStore()
-console.log(user)
-  
+  const { isAuth } = useGenerationStore()
+  // console.log(user)
+  const [user, setUser] = useState("")
   const [navbar, setNavbar] = useState<boolean>(false);
- 
+  async function getUserDetails() {
+    try {
+      const user = await axios.get('/api/users/userdata');
+      setUser(user.data.data);
+      console.log(user.data.data);
+    } catch (error) {
+      throw error
+    }
+  }
 
   return (
     <div className='w-full h-[20px]'>
@@ -48,7 +56,7 @@ console.log(user)
             <div
               className={`flex-1 flex-row justify-self-center pb-3  items-center mt-8 md:block md:pb-0 md:mt-0 ${navbar ? 'p-12 md:p-0 block' : 'hidden'
                 }`}
-               >
+            >
               <ul className="h-screen md:h-auto items-center justify-center  md:flex ">
                 <li className="pb-6 text-xl text-purple-600 py-2 md:px-6 text-center md:border-b-0  hover:bg-purple-900  border-purple-900   md:hover:bg-transparent">
                   <Link href="/about" onClick={() => setNavbar(!navbar)}>
@@ -70,25 +78,24 @@ console.log(user)
                     Contactus
                   </Link>
                 </li>
-               {!isAuth&&<ul className='flex gap-1 ml-8'>
-                <li className='w-20 md:w-24 lg:w-32 h-10 rounded-xl bg-white text-black border border-black text-[8px] md:text-[12px] lg:text-sm sm:mx '>
-                 <Link href="/signup" className='flex justify-center items-center gap-2 h-full w-full lg:hover:text-lg md:hover:text-sm hover:text-[10px] duration-200'>Signup</Link>
-                </li>
-                <li className='ml-6 w-20 md:w-24 lg:w-32 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-[8px] md:text-[12px] lg:text-sm  '>
-                 <Link href="/login" className='flex justify-center items-center gap-2 w-full h-full lg:hover:text-lg md:hover:text-sm hover:text-[10px] duration-200'>login</Link>
-                </li>
-               </ul> 
-               }
-               {
-                 isAuth&& <button className='bg-white py-2 px-2 rounded-lg text-black font-bold text-xl mb-3'>
-                  <Link href="/profile" className='w-full h-full'></Link>Hi!
-                 </button>
-               }
+                {!isAuth && <ul className='flex gap-1 ml-8'>
+                  <li className='w-20 md:w-24 lg:w-32 h-10 rounded-xl bg-white text-black border border-black text-[8px] md:text-[12px] lg:text-sm sm:mx '>
+                    <Link href="/signup" className='flex justify-center items-center gap-2 h-full w-full lg:hover:text-lg md:hover:text-sm hover:text-[10px] duration-200'>Signup</Link>
+                  </li>
+                  <li className='ml-6 w-20 md:w-24 lg:w-32 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-[8px] md:text-[12px] lg:text-sm  '>
+                    <Link href="/login" className='flex justify-center items-center gap-2 w-full h-full lg:hover:text-lg md:hover:text-sm hover:text-[10px] duration-200'>login</Link>
+                  </li>
+                </ul>
+                }
+                {
+                  isAuth &&
+                  <Link href="/profile" className='w-full h-full'><button className='bg-white py-2 px-2 rounded-lg text-black font-bold text-xl mb-3'>Hi! {user.name}</button></Link>
+                }
               </ul>
-              
+
             </div>
           </div>
-          
+
         </div>
       </nav>
     </div>

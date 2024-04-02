@@ -59,14 +59,14 @@ export async function POST(request: NextRequest) {
         message: "Incorrect Password!",
       }, { status: 400 });
     }
-  //  const student=await Student2022.findOne({rollno});
-    // Generate JWT token containing user data
+   //  const student=await Student2022.findOne({rollno});
+        // Generate JWT token containing user data
     const tokenData = {
       id: user._id,
       email:user.email,
       rollno:user.rollno
     };
-
+ 
     // Sign the token with a secret key
     const token = jwt.sign(tokenData, process.env.TOKEN_SECRET!, { expiresIn: "1d" });
 

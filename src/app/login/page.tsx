@@ -14,7 +14,7 @@ import {
 } from "@tabler/icons-react";
 
 export default function LoginPage() {
-  const {setuser} =useGenerationStore();
+  const {setuser,setIsAuth} =useGenerationStore();
   const router = useRouter();
   const [user, setUser] = useState({
     rollno: "",
@@ -28,10 +28,11 @@ export default function LoginPage() {
     try {
       setLoading(true);
       const response = await axios.post("/api/users/login", user);
-      console.log("Login success", response.data);
+     console.log("Login success", response.data);
       toast.success("Login success");
-      setuser(response.data.user);
+    setuser(response.data.user);
       // console.log(response.data.user)
+      setIsAuth(true);
       router.push("/profile");
       // dispatch(SetToken(response.data.token));
   
