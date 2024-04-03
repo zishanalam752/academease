@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Chart from "chart.js/auto"; // Import chart.js for rendering charts
 import Link from "next/link";
 import Sidebar from "../Sidebar";
-import { FaBriefcaseMedical, FaChartBar, FaHome, FaPen, FaUser } from "react-icons/fa";
+import { FaBriefcaseMedical, FaBuilding, FaChartBar, FaHome, FaPen, FaUser } from "react-icons/fa";
 import { MdOutlineLogout } from "react-icons/md";
 import { Bar } from "react-chartjs-2"
 import { CategoryScale, scales } from 'chart.js';
@@ -12,6 +12,8 @@ import { toast } from "sonner";
 import { redirect, useRouter } from "next/navigation";
 import { timeTable } from "../timtable"
 import axios from "axios";
+import { ImLocation } from "react-icons/im";
+import { IoTime } from "react-icons/io5";
 Chart.register(CategoryScale);
 
 const ProfilePage = () => {
@@ -346,11 +348,11 @@ const ProfilePage = () => {
                   <div className="absolute rounded-md h-full w-0 bg-slate-950 opacity-25 top-0 left-0
                             group-hover:w-full duration-200 ease-in-out"></div>
                   <div className="flex items-center gap-6">
-                    <img src="linkedin-logo-linkedin-icon-transparent-free-png.png" alt="logo" className="relative z-40 w-16 h-16 rounded-lg group-hover:scale-105 duration-200" />
+                    <img src="https://s.yimg.com/fz/api/res/1.2/oPmnuoHGZwDmud64pDGAcQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/051c505f-dc29-3303-81b2-5828c6e3b2e2/t_500x300" alt="logo" className="relative z-40 w-16 h-16 rounded-lg group-hover:scale-105 duration-200" />
                     <div className="text-gray-200 flex flex-col gap-1">
                       <h2 className="relative z-40 text-2xl font-semibold">Linked In</h2>
                       <div className="flex gap-2 items-center text-sm text-gray-400">
-                        <i className="fa-solid fa-location-dot"></i>
+                      <ImLocation />
                         <p>Bangalore</p>
                       </div>
                     </div>
@@ -359,17 +361,17 @@ const ProfilePage = () => {
                     <h2 className="text-gray-200 font-medium text-xl line-clamp-1">React Native Web Dev eloper</h2>
                     <div className="flex gap-5 items-center text-sm text-gray-400">
                       <div className="flex gap-2 items-center">
-                        <i className="fa-regular fa-building"></i>
+                      <FaBuilding/>
                         <p>Full Time</p>
                       </div>
                       <div className="flex gap-2 items-center">
-                        <i className="fa-regular fa-clock"></i>
+                      <IoTime/>
                         <p>5 Hours ago</p>
                       </div>
                     </div>
                   </div>
                   <div className="mt-5 text-gray-200">
-                    <p className="text-balance tracking-wider line-clamp-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, cupiditate, pariatur ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet consectetur.</p>
+                    <p className="text-balance tracking-wider line-clamp-4">LinkedIn is a business and employment-focused social media platform that works through websites and mobile apps. It was launched on May 5, 2003 by Reid Hoffman and Eric Ly.</p>
                   </div>
                   <div className="mt-7 flex">
                     <button className="relative z-40 py-2 px-3 flex gap-3 items-center rounded-md border-[1.5px] border-transparent bg-sky-900 text-sky-500 group-hover:border-sky-500 duration-200">
@@ -384,11 +386,11 @@ const ProfilePage = () => {
                   <div className="absolute rounded-md h-full w-0 bg-slate-950 opacity-25 top-0 left-0
                             group-hover:w-full duration-200 ease-in-out"></div>
                   <div className="flex items-center gap-6">
-                    <img src="1_MxZpRFN3hnZrCC05s1q73A.png" alt="logo" className="relative z-40 w-16 h-16 rounded-lg group-hover:scale-105 duration-200" />
+                    <img src="https://s.yimg.com/fz/api/res/1.2/XSR2bSoqLhTTGXCN0PsbIw--~C/YXBwaWQ9c3JjaGRkO2g9MTQ0O3E9ODA7dz0xNDQ-/https://s.yimg.com/zb/imgv1/8c5471bc-3c0a-3801-8b23-7747bd21e027/t_500x300" alt="logo" className="relative z-40 w-16 h-16 rounded-lg group-hover:scale-105 duration-200" />
                     <div className="text-gray-200 flex flex-col gap-1">
                       <h2 className="relative z-40 text-2xl font-semibold">Microsoft</h2>
                       <div className="flex gap-2 items-center text-sm text-gray-400">
-                        <i className="fa-solid fa-location-dot"></i>
+                      <ImLocation />
                         <p>Bangalore</p>
                       </div>
                     </div>
@@ -397,17 +399,17 @@ const ProfilePage = () => {
                     <h2 className="text-gray-200 font-medium text-xl line-clamp-1">Summer Internship Program</h2>
                     <div className="flex gap-5 items-center text-sm text-gray-400">
                       <div className="flex gap-2 items-center">
-                        <i className="fa-regular fa-building"></i>
+                        <FaBuilding/>
                         <p>Part Time</p>
                       </div>
                       <div className="flex gap-2 items-center">
-                        <i className="fa-regular fa-clock"></i>
+                        <IoTime/>
                         <p>5 Hours ago</p>
                       </div>
                     </div>
                   </div>
                   <div className="mt-5 text-gray-200">
-                    <p className="text-balance tracking-wider line-clamp-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, cupiditate, pariatur ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet consectetur.</p>
+                    <p className="text-balance tracking-wider line-clamp-4">Embark on a transformative journey with Microsoft's internship program, where innovation meets opportunity.</p>
                   </div>
                   <div className="mt-7 flex">
                     <button className="relative z-40 py-2 px-3 flex gap-3 items-center rounded-md border-[1.5px] border-transparent bg-sky-900 text-sky-500 group-hover:border-sky-500 duration-200">
@@ -422,11 +424,11 @@ const ProfilePage = () => {
                   <div className="absolute rounded-md h-full w-0 bg-slate-950 opacity-25 top-0 left-0
                             group-hover:w-full duration-200 ease-in-out"></div>
                   <div className="flex items-center gap-6">
-                    <img src="Oracle-Logo.jpg" alt="logo" className="relative z-40 w-16 h-16 rounded-lg group-hover:scale-105 duration-200" />
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.Zv0YJ6WsiatPPOaF-BxvsAHaEK&pid=Api&P=0&h=180" alt="logo" className="relative z-40 w-16 h-16 rounded-lg group-hover:scale-105 duration-200" />
                     <div className="text-gray-200 flex flex-col gap-1">
                       <h2 className="relative z-40 text-2xl font-semibold">Oracle</h2>
                       <div className="flex gap-2 items-center text-sm text-gray-400">
-                        <i className="fa-solid fa-location-dot"></i>
+                        <ImLocation/>
                         <p>New Delhi</p>
                       </div>
                     </div>
@@ -435,17 +437,17 @@ const ProfilePage = () => {
                     <h2 className="text-gray-200 font-medium text-xl line-clamp-1">Java Software Engineer</h2>
                     <div className="flex gap-5 items-center text-sm text-gray-400">
                       <div className="flex gap-2 items-center">
-                        <i className="fa-regular fa-building"></i>
+                        <FaBuilding/>
                         <p>Full Time</p>
                       </div>
                       <div className="flex gap-2 items-center">
-                        <i className="fa-regular fa-clock"></i>
+                        <IoTime/>
                         <p>5 Hours ago</p>
                       </div>
                     </div>
                   </div>
                   <div className="mt-5 text-gray-200">
-                    <p className="text-balance tracking-wider line-clamp-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, cupiditate, pariatur ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet consectetur.</p>
+                    <p className="text-balance tracking-wider line-clamp-4">Oracle Corporation is an American multinational computer technology company headquartered in Austin, Texas, United States</p>
                   </div>
                   <div className="mt-7 flex">
                     <button className="relative z-40 py-2 px-3 flex gap-3 items-center rounded-md border-[1.5px] border-transparent bg-sky-900 text-sky-500 group-hover:border-sky-500 duration-200">

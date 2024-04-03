@@ -9,28 +9,28 @@ const Dept = [
     codeblock:"Navigate Computer Science & Information Eng: Access notes and PYQs. Enhance your understanding, excel in exams, and pave the path for a successful career with our specialized study materials tailored for CS & IT enthusiasts.",
     semester: [
       {
-        id: 1, name: 'Semester I', subjects: ["PSPS", "Integral Calculus", "Physics", "Chemistry", "Engineering Practice"]
+        id: 1, name: 'Semester I', subjects: ["PSPS", "Math-1", "Physics", "Chemistry", "Engineering Practice","CSE"]
       },
       {
-        id: 2, name: 'Semester II', subjects: ["PSPS", "Integral Calculus", "Physics", "Chemistry", "Engineering Practice"]
+        id: 2, name: 'Semester II', subjects: ["Economics", "Integral Calculus", "Python", "Web Development", "DSD","DSA"]
       },
       {
-        id: 3, name: 'Semester III', subjects: ["PSPS", "Integral Calculus", "Physics", "Chemistry", "Engineering Practice"]
+        id: 3, name: 'Semester III', subjects: ["COA", "Descrete Math", "DAA", "Software Eng", "Java", "IOT"]
       },
       {
-        id: 4, name: 'Semester IV', subjects: ["PSPS", "Integral Calculus", "Physics", "Chemistry", "Engineering Practice"]
+        id: 4, name: 'Semester IV', subjects: ["OS", "CN", "DBMS", "Scripting", "AI & Soft compt"]
       },
       {
         id: 5, name: 'Semester V', subjects: ["PSPS", "Integral Calculus", "Physics", "Chemistry", "Engineering Practice"]
       },
       {
-        id: 6, name: 'Semester VI', subjects: ["PSPS", "Integral Calculus", "Physics", "Chemistry", "Engineering Practice"]
+        id: 6, name: 'Semester VI', subjects: [" Internship"," "," "," "," "," "]
       },
       {
         id: 7, name: 'Semester VII', subjects: ["PSPS", "Integral Calculus", "Physics", "Chemistry", "Engineering Practice"]
       },
       {
-        id: 8, name: 'Semester VIII', subjects: ["PSPS", "Integral Calculus", "Physics", "Chemistry", "Engineering Practice"]
+        id: 8, name: 'Semester VIII', subjects: ["Elective-1", "Elective-2", "Big data Analytics", "Compiler Design", "Professional Ethics"]
       },
 
     ]

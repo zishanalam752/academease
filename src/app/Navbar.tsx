@@ -13,19 +13,34 @@ import axios from 'axios';
 import { useGenerationStore } from '@/store/idea-generation';
 // import { buttons } from './Button';
 const Navbar: React.FC = () => {
-  const { isAuth } = useGenerationStore()
+  // const { isAuth } = useGenerationStore()\
+  const[isAuth,setIsAuth]=useState(false);
+  // const [user,setUser]=useState("")
   // console.log(user)
   const [user, setUser] = useState("")
   const [navbar, setNavbar] = useState<boolean>(false);
   async function getUserDetails() {
     try {
-      const user = await axios.get('/api/users/userdata');
+      const user = await axios.get("/api/users/userdata");
+      console.log(user.data.data)
       setUser(user.data.data);
-      console.log(user.data.data);
     } catch (error) {
-      throw error
+      throw error;
     }
   }
+async function checkAuth() {
+  try {
+    const response=await axios.get("/api/users/chekAuth");
+    const data=response.data.data?true:false;
+    setIsAuth(data)
+  } catch (error:any) {
+    throw error.message
+  }
+}
+useEffect(()=>{
+   checkAuth();
+   getUserDetails();
+},[])
 
   return (
     <div className='w-full h-[20px]'>
