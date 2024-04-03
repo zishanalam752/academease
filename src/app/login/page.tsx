@@ -98,7 +98,7 @@ export default function LoginPage() {
             <BottomGradient />
           </button>
           <div className="text-[13px] text-right mt-3">
-            <Link href="/user" className="">
+            <Link href="/signup" className="">
               Visit Signup Page &rarr;
             </Link>
           </div>

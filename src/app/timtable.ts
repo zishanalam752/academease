@@ -10,40 +10,46 @@ export const timeTable = [
                         subsections: [
                             {
                                 subsection: "CS-01",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: ""
+                                        class: "",
+                                        location:""
                                     }
                                     , {
                                         period: "2",
-                                        class: ""
+                                        class: "",
+                                        location:""
                                     },
                                     {
                                         period: "3",
-                                        class: ""
+                                        class: "",
+                                        location:""
                                     }, {
                                         period: "4",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        location:"LHC-105"
                                     }, {
                                         period: "5",
-                                        class: "break"
+                                        class: ""
                                     }, {
                                         period: "6",
-                                        class: "OS lab"
+                                        class: "OS lab",
+                                        location:"CSLab-09"
                                     }, {
                                         period: "7",
-                                        class: "OS lab"
+                                        class: "OS lab",
+                                        location:"CSLab-09"
                                     },
                                     {
                                         period: "8",
-                                        class: "AI class"
+                                        class: "AI class",
                                     }
                                 ]
                             },
                             {
                                 subsection: "CS-02",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
                                         class: ""
@@ -57,25 +63,29 @@ export const timeTable = [
                                         class: ""
                                     }, {
                                         period: "4",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        location: "LHC-105"
                                     }, {
                                         period: "5",
-                                        class: "break"
+                                        class: ""
                                     }, {
                                         period: "6",
-                                        class: "OS lab"
+                                        class: "OS lab",
+                                        location: "CSLab-09"
                                     }, {
                                         period: "7",
-                                        class: "OS lab"
+                                        class: "OS lab",
+                                        location: "CSLab-09"
                                     },
                                     {
                                         period: "8",
-                                        class: "AI class"
+                                        class: "AI class",
+                                        Location : "LHC-205"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-03",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
                                         class: ""
@@ -89,25 +99,30 @@ export const timeTable = [
                                         class: ""
                                     }, {
                                         period: "4",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "LHC-105"
                                     }, {
                                         period: "5",
-                                        class: "break"
+                                        class: ""
                                     }, {
                                         period: "6",
-                                        class: "CN lab"
+                                        class: "CN lab",
+                                        Location: "CSLab-06"
                                     }, {
                                         period: "7",
-                                        class: "CN lab"
+                                        class: "CN lab",
+                                        Location: "CSLab-06"
+
                                     },
                                     {
                                         period: "8",
-                                        class: "AI class"
+                                        class: "AI class",
+                                        location: "LHC-205"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-04",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
                                         class: ""
@@ -121,20 +136,26 @@ export const timeTable = [
                                         class: ""
                                     }, {
                                         period: "4",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "LHC-105"
                                     }, {
                                         period: "5",
-                                        class: "break"
+                                        class: ""
                                     }, {
                                         period: "6",
-                                        class: "AI lab"
+                                        class: "AI lab",
+                                        location:"CSLab- 01"
                                     }, {
                                         period: "7",
-                                        class: "AI lab"
+                                        class: "AI lab",
+                                        location:"CSLab- 01"
+
                                     },
                                     {
                                         period: "8",
-                                        class: "AI class"
+                                        class: "AI class",
+                                        location: "LHC-205"
+
                                     }
                                 ]
                             }
@@ -145,14 +166,15 @@ export const timeTable = [
                         subsections: [
                             {
                                 subsection: "CS-05",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
                                         class: ""
                                     }
                                     , {
                                         period: "2",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L3"
                                     }
                                     , {
                                         period: "3",
@@ -164,7 +186,7 @@ export const timeTable = [
                                     }
                                     , {
                                         period: "5",
-                                        class: "break"
+                                        class: ""
                                     }
                                     , {
                                         period: "6",
@@ -172,36 +194,42 @@ export const timeTable = [
                                     }
                                     , {
                                         period: "7",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "L6"
                                     }
                                     , {
                                         period: "8",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L6"
+
                                     }
 
                                 ]
                             }, {
                                 subsection: "CS-06",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
                                         class: ""
                                     }
                                     , {
                                         period: "2",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L3"
                                     }
                                     , {
                                         period: "3",
-                                        class: "Scripting Lab"
+                                        class: "Scripting Lab",
+                                        Location: "CSLab-01"
                                     }
                                     , {
                                         period: "4",
-                                        class: "Scripting Lab"
+                                        class: "Scripting Lab",
+                                        Location: "CSLab-01"
                                     }
                                     , {
                                         period: "5",
-                                        class: "break"
+                                        class: ""
                                     }
                                     , {
                                         period: "6",
@@ -209,35 +237,40 @@ export const timeTable = [
                                     }
                                     , {
                                         period: "7",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "L6"
                                     }
                                     , {
                                         period: "8",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L6"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-07",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
                                         class: ""
                                     }
                                     , {
                                         period: "2",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L3"
                                     }
                                     , {
                                         period: "3",
-                                        class: "AI Lab"
+                                        class: "AI Lab",
+                                        Location: "CSLab-01"
                                     }
                                     , {
                                         period: "4",
-                                        class: "AI Lab"
+                                        class: "AI Lab",
+                                        Location: "CSLab-01"
                                     }
                                     , {
                                         period: "5",
-                                        class: "break"
+                                        class: ""
                                     }
                                     , {
                                         period: "6",
@@ -245,35 +278,40 @@ export const timeTable = [
                                     }
                                     , {
                                         period: "7",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "L6"
                                     }
                                     , {
                                         period: "8",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L6"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-08",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
                                         class: ""
                                     }
                                     , {
                                         period: "2",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L3"
                                     }
                                     , {
                                         period: "3",
-                                        class: "ScriptingLab"
+                                        class: "ScriptingLab",
+                                        Location: "CSLab-03"
                                     }
                                     , {
                                         period: "4",
-                                        class: "Scripting Lab"
+                                        class: "Scripting Lab",
+                                        Location: "CSLab-03"
                                     }
                                     , {
                                         period: "5",
-                                        class: "break"
+                                        class: ""
                                     }
                                     , {
                                         period: "6",
@@ -281,11 +319,13 @@ export const timeTable = [
                                     }
                                     , {
                                         period: "7",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "L6"
                                     }
                                     , {
                                         period: "8",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L6"
                                     }
                                 ]
                             }
@@ -296,26 +336,30 @@ export const timeTable = [
                         subsections: [
                             {
                                 subsection: "CS-09",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L6"
                                     }
                                     , {
                                         period: "2",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "L6"
                                     }
                                     , {
                                         period: "3",
-                                        class: "OS Lab"
+                                        class: "OS Lab",
+                                        Location: "CSLab-08"
                                     }
                                     , {
                                         period: "4",
-                                        class: "OS Lab"
+                                        class: "OS Lab",
+                                        Location: "CSLab-08"
                                     }
                                     , {
                                         period: "5",
-                                        class: "break"
+                                        class: ""
                                     }
                                     , {
                                         period: "6",
@@ -333,26 +377,30 @@ export const timeTable = [
                                 ]
                             }, {
                                 subsection: "CS-10",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L6"
                                     }
                                     , {
                                         period: "2",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "L6"
                                     }
                                     , {
                                         period: "3",
-                                        class: "OS Lab"
+                                        class: "OS Lab",
+                                        Location: "CSLab-08"
                                     }
                                     , {
                                         period: "4",
-                                        class: "OS Lab"
+                                        class: "OS Lab",
+                                        Location: "CSLab-08"
                                     }
                                     , {
                                         period: "5",
-                                        class: "break"
+                                        class: ""
                                     }
                                     , {
                                         period: "6",
@@ -370,26 +418,30 @@ export const timeTable = [
                                 ]
                             }, {
                                 subsection: "CS-11",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L6"
                                     }
                                     , {
                                         period: "2",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "L6"
                                     }
                                     , {
                                         period: "3",
-                                        class: "OS Lab"
+                                        class: "OS Lab",
+                                        Location: "CSLab-04"
                                     }
                                     , {
                                         period: "4",
-                                        class: "OS Lab"
+                                        class: "OS Lab",
+                                        Location: "CSLab-04"
                                     }
                                     , {
                                         period: "5",
-                                        class: "break"
+                                        class: ""
                                     }
                                     , {
                                         period: "6",
@@ -407,26 +459,30 @@ export const timeTable = [
                                 ]
                             }, {
                                 subsection: "CS-12",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L6"
                                     }
                                     , {
                                         period: "2",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "L6"
                                     }
                                     , {
                                         period: "3",
-                                        class: "DBMS Lab"
+                                        class: "DBMS Lab",
+                                        Location: "CSLab-04"
                                     }
                                     , {
                                         period: "4",
-                                        class: "DBMS Lab"
+                                        class: "DBMS Lab",
+                                        Location: "CSLab-04"
                                     }
                                     , {
                                         period: "5",
-                                        class: "break"
+                                        class: ""
                                     }
                                     , {
                                         period: "6",
@@ -466,130 +522,158 @@ export const timeTable = [
                         subsections: [
                             {
                                 subsection: "CS-01",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L3"
                                     }
                                     , {
                                         period: "2",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "L3"
                                     },
                                     {
                                         period: "3",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L6"
                                     }, {
                                         period: "4",
-                                        class: "DBMS Lab"
+                                        class: "DBMS Lab",
+                                        Location: "CSLab-10"
                                     }, {
                                         period: "5",
-                                        class: "DBMS Lab"
+                                        class: "DBMS Lab",
+                                        Location: "CSLab-10"
                                     }, {
                                         period: "6",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "7",
-                                        class: "AI lab"
+                                        class: "AI lab",
+                                        Location: "CSLab-01"
                                     },
                                     {
                                         period: "8",
-                                        class: "AI Lab"
+                                        class: "AI Lab",
+                                        Location: "CSLab-01"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-02",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L3"
                                     }
                                     , {
                                         period: "2",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "L3"
                                     },
                                     {
                                         period: "3",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L6"
                                     }, {
                                         period: "4",
-                                        class: "DBMS Lab"
+                                        class: "DBMS Lab",
+                                        Location: "CSLab-10"
                                     }, {
                                         period: "5",
-                                        class: "DBMS Lab"
+                                        class: "DBMS Lab",
+                                        Location: "CSLab-10"
                                     }, {
                                         period: "6",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "7",
-                                        class: "CN lab"
+                                        class: "CN lab",
+                                        Location: "CSLab-09"
                                     },
                                     {
                                         period: "8",
-                                        class: "CN Lab"
+                                        class: "CN Lab",
+                                        Location: "CSLab-09"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-03",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L3"
                                     }
                                     , {
                                         period: "2",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "L3"
                                     },
                                     {
                                         period: "3",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L6"
                                     }, {
                                         period: "4",
-                                        class: "AI Lab"
+                                        class: "AI Lab",
+                                        Location: "CSLab-01"
                                     }, {
                                         period: "5",
-                                        class: "AI Lab"
+                                        class: "AI Lab",
+                                        Location: "CSLab-01"
                                     }, {
                                         period: "6",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "7",
-                                        class: "OS lab"
+                                        class: "OS lab",
+                                        Location: "CSLab-08"
                                     },
                                     {
                                         period: "8",
-                                        class: "OS Lab"
+                                        class: "OS Lab",
+                                        Location: "CSLab-08"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-04",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L3"
                                     }
                                     , {
                                         period: "2",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "L3"
                                     },
                                     {
                                         period: "3",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L6"
                                     }, {
                                         period: "4",
-                                        class: "OS Lab"
+                                        class: "OS Lab",
+                                        Location: "CSLab-06"
                                     }, {
                                         period: "5",
-                                        class: "OS Lab"
+                                        class: "OS Lab",
+                                        Location: "CSLab-06"
                                     }, {
                                         period: "6",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "7",
-                                        class: "CN lab"
+                                        class: "CN lab",
+                                        Location: "CSLab-06"
                                     },
                                     {
                                         period: "8",
-                                        class: "CN Lab"
+                                        class: "CN Lab",
+                                        Location: "CSLab-06"
                                     }
                                 ]
                             }
@@ -599,7 +683,7 @@ export const timeTable = [
                         subsections: [
                             {
                                 subsection: "CS-05",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
                                         class: ""
@@ -610,28 +694,33 @@ export const timeTable = [
                                     },
                                     {
                                         period: "3",
-                                        class: "CN Lab"
+                                        class: "CN Lab",
+                                        Location: "CSLab-09"
                                     }, {
                                         period: "4",
-                                        class: "CN Lab"
+                                        class: "CN Lab",
+                                        Location: "CSLab-09"
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "MBA-304"
                                     }, {
                                         period: "7",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "MBA-304"
                                     },
                                     {
                                         period: "8",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "MBA-304"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-06",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
                                         class: ""
@@ -648,22 +737,25 @@ export const timeTable = [
                                         class: ""
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "MBA-304"
                                     }, {
                                         period: "7",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "MBA-304"
                                     },
                                     {
                                         period: "8",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "MBA-304"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-07",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
                                         class: ""
@@ -674,28 +766,33 @@ export const timeTable = [
                                     },
                                     {
                                         period: "3",
-                                        class: "OS Lab"
+                                        class: "OS Lab",
+                                        Location: "CSLab-08"
                                     }, {
                                         period: "4",
-                                        class: "OS Lab"
+                                        class: "OS Lab",
+                                        Location: "CSLab-08"
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "MBA-304"
                                     }, {
                                         period: "7",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "MBA-304"
                                     },
                                     {
                                         period: "8",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "MBA-304"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-08",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
                                         class: ""
@@ -706,23 +803,28 @@ export const timeTable = [
                                     },
                                     {
                                         period: "3",
-                                        class: "OS Lab"
+                                        class: "OS Lab",
+                                        Location: "CSLab-08"
                                     }, {
                                         period: "4",
-                                        class: "OS Lab"
+                                        class: "OS Lab",
+                                        Location: "CSLab-08"
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "MBA-304"
                                     }, {
                                         period: "7",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "MBA-304"
                                     },
                                     {
                                         period: "8",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "MBA-304"
                                     }
                                 ]
                             }
@@ -732,130 +834,150 @@ export const timeTable = [
                         subsections: [
                             {
                                 subsection: "CS-09",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L6"
                                     }
                                     , {
                                         period: "2",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L6"
                                     },
                                     {
                                         period: "3",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "LHC-103"
                                     }, {
                                         period: "4",
                                         class: ""
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
                                         class: ""
                                     }, {
                                         period: "7",
-                                        class: "AI Lab"
+                                        class: "AI Lab",
+                                        Location: "CSLab-08"
                                     },
                                     {
                                         period: "8",
-                                        class: "AI Lab"
+                                        class: "AI Lab",
+                                        Location: "CSLab-08"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-10",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L6"
                                     }
                                     , {
                                         period: "2",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L6"
                                     },
                                     {
                                         period: "3",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "LHC-103"
                                     }, {
                                         period: "4",
                                         class: ""
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
                                         class: ""
                                     }, {
                                         period: "7",
-                                        class: "AI Lab"
+                                        class: "AI Lab",
+                                        Location: "CSLab-01"
                                     },
                                     {
                                         period: "8",
-                                        class: "AI Lab"
+                                        class: "AI Lab",
+                                        Location: "CSLab-01"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-11",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L6"
                                     }
                                     , {
                                         period: "2",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L6"
                                     },
                                     {
                                         period: "3",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "LHC-103"
                                     }, {
                                         period: "4",
                                         class: ""
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
                                         class: ""
                                     }, {
                                         period: "7",
-                                        class: "Scripting Lab"
+                                        class: "Scripting Lab",
+                                        Location: "CSLab-03"
                                     },
                                     {
                                         period: "8",
-                                        class: "Scripting Lab"
+                                        class: "Scripting Lab",
+                                        Location: "CSLab-03"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-12",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L6"
                                     }
                                     , {
                                         period: "2",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L6"
                                     },
                                     {
                                         period: "3",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "LHC-103"
                                     }, {
                                         period: "4",
                                         class: ""
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
                                         class: ""
                                     }, {
                                         period: "7",
-                                        class: "CN Lab"
+                                        class: "CN Lab",
+                                        Location: "CSLab-09"
                                     },
                                     {
                                         period: "8",
-                                        class: "CN Lab"
+                                        class: "CN Lab",
+                                        Location: "CSLab-09"
                                     }
                                 ]
                             }
@@ -875,7 +997,7 @@ export const timeTable = [
                         subsections: [
                             {
                                 subsection: "CS-01",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
                                         class: ""
@@ -886,28 +1008,31 @@ export const timeTable = [
                                     },
                                     {
                                         period: "3",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L2"
                                     }, {
                                         period: "4",
                                         class: ""
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
                                         class: ""
                                     }, {
                                         period: "7",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L5"
                                     },
                                     {
                                         period: "8",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L5"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-02",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
                                         class: ""
@@ -918,28 +1043,31 @@ export const timeTable = [
                                     },
                                     {
                                         period: "3",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L2"
                                     }, {
                                         period: "4",
                                         class: ""
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
                                         class: ""
                                     }, {
                                         period: "7",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L5"
                                     },
                                     {
                                         period: "8",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L5"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-03",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
                                         class: ""
@@ -950,28 +1078,31 @@ export const timeTable = [
                                     },
                                     {
                                         period: "3",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L2"
                                     }, {
                                         period: "4",
                                         class: ""
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
                                         class: ""
                                     }, {
                                         period: "7",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L5"
                                     },
                                     {
                                         period: "8",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L5"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-04",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
                                         class: ""
@@ -982,23 +1113,27 @@ export const timeTable = [
                                     },
                                     {
                                         period: "3",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L2"
                                     }, {
                                         period: "4",
                                         class: ""
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
                                         class: ""
                                     }, {
                                         period: "7",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L5"
                                     },
                                     {
                                         period: "8",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L5"
+
                                     }
                                 ]
                             }
@@ -1008,130 +1143,158 @@ export const timeTable = [
                         subsections: [
                             {
                                 subsection: "CS-05",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "AI Lab"
+                                        class: "AI Lab",
+                                        Location: "M-306"
                                     }
                                     , {
                                         period: "2",
-                                        class: "AI Lab"
+                                        class: "AI Lab",
+                                        Location: "M-306"
                                     },
                                     {
                                         period: "3",
-                                        class: "Scripting Lab"
+                                        class: "Scripting Lab",
+                                        Location: "CSLab-09"
                                     }, {
                                         period: "4",
-                                        class: "Scripting Lab"
+                                        class: "Scripting Lab",
+                                        Location: "CSLab-09"
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L3"
                                     }, {
                                         period: "7",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L3"
                                     },
                                     {
                                         period: "8",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L3"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-06",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "DBMSLab"
+                                        class: "DBMSLab",
+                                        Location: "M-309"
                                     }
                                     , {
                                         period: "2",
-                                        class: "DBMS Lab"
+                                        class: "DBMS Lab",
+                                        Location: "M-309"
                                     },
                                     {
                                         period: "3",
-                                        class: "AI Lab"
+                                        class: "AI Lab",
+                                        Location: "M-306"
                                     }, {
                                         period: "4",
-                                        class: "AI Lab"
+                                        class: "AI Lab",
+                                        Location: "M-306"
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L3"
                                     }, {
                                         period: "7",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L3"
                                     },
                                     {
                                         period: "8",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L3"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-07",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "Scripting Lab"
+                                        class: "Scripting Lab",
+                                        Location: "CSLab-09"
                                     }
                                     , {
                                         period: "2",
-                                        class: "Scripting Lab"
+                                        class: "Scripting Lab",
+                                        Location: "CSLab-09"
                                     },
                                     {
                                         period: "3",
-                                        class: "DBMS Lab"
+                                        class: "DBMS Lab",
+                                        Location: "CSLab-09"
                                     }, {
                                         period: "4",
-                                        class: "DBMS Lab"
+                                        class: "DBMS Lab",
+                                        Location: "CSLab-09"
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L3"
                                     }, {
                                         period: "7",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L3"
                                     },
                                     {
                                         period: "8",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L3"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-08",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "DBMS Lab"
+                                        class: "DBMS Lab",
+                                        Location: "CSLab-08"
                                     }
                                     , {
                                         period: "2",
-                                        class: "DBMS Lab"
+                                        class: "DBMS Lab",
+                                        Location: "CSLab-08"
                                     },
                                     {
                                         period: "3",
-                                        class: "AI Lab"
+                                        class: "AI Lab",
+                                        Location: "CSLab-01"
                                     }, {
                                         period: "4",
-                                        class: "AI Lab"
+                                        class: "AI Lab",
+                                        Location: "CSLab-01"
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L3"
                                     }, {
                                         period: "7",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L3"
                                     },
                                     {
                                         period: "8",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L3"
                                     }
                                 ]
                             }
@@ -1141,7 +1304,7 @@ export const timeTable = [
                         subsections: [
                             {
                                 subsection: "CS-09",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
                                         class: ""
@@ -1152,28 +1315,33 @@ export const timeTable = [
                                     },
                                     {
                                         period: "3",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L6"
                                     }, {
                                         period: "4",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "L6"
                                     }, {
                                         period: "5",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L6"
                                     }, {
                                         period: "6",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "7",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L6"
                                     },
                                     {
                                         period: "8",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L6"
                                     }
                                 ]
                             }, {
                                 Subsection: "CS-10",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
                                         class: ""
@@ -1184,28 +1352,33 @@ export const timeTable = [
                                     },
                                     {
                                         period: "3",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L6"
                                     }, {
                                         period: "4",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "L6"
                                     }, {
                                         period: "5",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L6"
                                     }, {
                                         period: "6",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "7",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L6"
                                     },
                                     {
                                         period: "8",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L6"
                                     }
                                 ]
                             }, {
                                 Subsection: "CS-11",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
                                         class: ""
@@ -1216,28 +1389,33 @@ export const timeTable = [
                                     },
                                     {
                                         period: "3",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L6"
                                     }, {
                                         period: "4",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "L6"
                                     }, {
                                         period: "5",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L6"
                                     }, {
                                         period: "6",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "7",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L6"
                                     },
                                     {
                                         period: "8",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L6"
                                     }
                                 ]
                             }, {
                                 Subsection: "CS-12",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
                                         class: ""
@@ -1248,23 +1426,28 @@ export const timeTable = [
                                     },
                                     {
                                         period: "3",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L6"
                                     }, {
                                         period: "4",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "L6"
                                     }, {
                                         period: "5",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L6"
                                     }, {
                                         period: "6",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "7",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L6"
                                     },
                                     {
                                         period: "8",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L6"
                                     }
                                 ]
                             }
@@ -1284,130 +1467,155 @@ export const timeTable = [
                         subsections: [
                             {
                                 subsection: "CS-01",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
                                         class: ""
                                     }
                                     , {
                                         period: "2",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L6"
                                     },
                                     {
                                         period: "3",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L4"
                                     }, {
                                         period: "4",
-                                        class: "Scripting Lab"
+                                        class: "Scripting Lab",
+                                        Location: "CSLab-09"
                                     }, {
                                         period: "5",
-                                        class: "Scripting Lab"
+                                        class: "Scripting Lab",
+                                        Location: "CSLab-09"
                                     }, {
                                         period: "6",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "7",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L2"
                                     },
                                     {
                                         period: "8",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L2"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-02",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
                                         class: ""
                                     }
                                     , {
                                         period: "2",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L6"
                                     },
                                     {
                                         period: "3",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L4"
                                     }, {
                                         period: "4",
-                                        class: "AI Lab"
+                                        class: "AI Lab",
+                                        Location: "M-306"
                                     }, {
                                         period: "5",
-                                        class: "AI Lab"
+                                        class: "AI Lab",
+                                        Location: "M-306"
                                     }, {
                                         period: "6",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "7",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L2"
                                     },
                                     {
                                         period: "8",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L2"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-03",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
                                         class: ""
                                     }
                                     , {
                                         period: "2",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L6"
                                     },
                                     {
                                         period: "3",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L4"
+
                                     }, {
                                         period: "4",
-                                        class: "Scripting Lab"
+                                        class: "Scripting Lab",
+                                        Location: "CSLab-01"
                                     }, {
                                         period: "5",
-                                        class: "Scripting Lab"
+                                        class: "Scripting Lab",
+                                        Location: "CSLab-01"
                                     }, {
                                         period: "6",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "7",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L2"
                                     },
                                     {
                                         period: "8",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L2"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-04",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
                                         class: ""
                                     }
                                     , {
                                         period: "2",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L6"
                                     },
                                     {
                                         period: "3",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L4"
                                     }, {
                                         period: "4",
-                                        class: "Scripting Lab"
+                                        class: "Scripting Lab",
+                                        Location: "CSLab-03"
                                     }, {
                                         period: "5",
-                                        class: "Scripting Lab"
+                                        class: "Scripting Lab",
+                                        Location: "CSLab-03"
                                     }, {
                                         period: "6",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "7",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L2"
                                     },
                                     {
                                         period: "8",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L2"
                                     }
                                 ]
                             }
@@ -1417,10 +1625,11 @@ export const timeTable = [
                         subsections: [
                             {
                                 subsection: "CS-05",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L6"
                                     }
                                     , {
                                         period: "2",
@@ -1428,16 +1637,19 @@ export const timeTable = [
                                     },
                                     {
                                         period: "3",
-                                        class: "OS Lab"
+                                        class: "OS Lab",
+                                        Location: "CSLab-06"
                                     }, {
                                         period: "4",
-                                        class: "OS Lab"
+                                        class: "OS Lab",
+                                        Location: "CSLab-06"
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L2"
                                     }, {
                                         period: "7",
                                         class: "Dept. Elective"
@@ -1449,10 +1661,11 @@ export const timeTable = [
                                 ]
                             }, {
                                 subsection: "CS-06",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L6"
                                     }
                                     , {
                                         period: "2",
@@ -1466,10 +1679,11 @@ export const timeTable = [
                                         class: ""
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L2"
                                     }, {
                                         period: "7",
                                         class: ""
@@ -1481,10 +1695,11 @@ export const timeTable = [
                                 ]
                             }, {
                                 subsection: "CS-07",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L6"
                                     }
                                     , {
                                         period: "2",
@@ -1498,25 +1713,29 @@ export const timeTable = [
                                         class: ""
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L2"
                                     }, {
                                         period: "7",
-                                        class: "CN Lab"
+                                        class: "CN Lab",
+                                        Location: "CSLab-09"
                                     },
                                     {
                                         period: "8",
-                                        class: "CN Lab"
+                                        class: "CN Lab",
+                                        Location: "CSLab-09"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-08",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L6"
                                     }
                                     , {
                                         period: "2",
@@ -1530,17 +1749,20 @@ export const timeTable = [
                                         class: ""
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L2"
                                     }, {
                                         period: "7",
-                                        class: "CN Lab"
+                                        class: "CN Lab",
+                                        Location: "CSLab-06"
                                     },
                                     {
                                         period: "8",
-                                        class: "CN Lab"
+                                        class: "CN Lab",
+                                        Location: "CSLab-06"
                                     }
                                 ]
                             }
@@ -1550,130 +1772,151 @@ export const timeTable = [
                         subsections: [
                             {
                                 subsection: "CS-09",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L4"
                                     }
                                     , {
                                         period: "2",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "L4"
                                     },
                                     {
                                         period: "3",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "LHC-101"
                                     }, {
                                         period: "4",
                                         class: ""
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
                                         class: ""
                                     }, {
                                         period: "7",
-                                        class: "DBMS Lab"
+                                        class: "DBMS Lab",
+                                        Location: "M-305"
                                     },
                                     {
                                         period: "8",
-                                        class: "DBMS Lab"
+                                        class: "DBMS Lab",
+                                        Location: "M-305"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-10",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L4"
                                     }
                                     , {
                                         period: "2",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "L4"
                                     },
                                     {
                                         period: "3",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "LHC-101"
+
                                     }, {
                                         period: "4",
                                         class: ""
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
                                         class: ""
                                     }, {
                                         period: "7",
-                                        class: "DBMS Lab"
+                                        class: "DBMS Lab",
+                                        Location: "CSLab-08"
                                     },
                                     {
                                         period: "8",
-                                        class: "DBMS Lab"
+                                        class: "DBMS Lab",
+                                        Location: "CSLab-08"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-11",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L4"
                                     }
                                     , {
                                         period: "2",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "L4"
                                     },
                                     {
                                         period: "3",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "LHC-101"
                                     }, {
                                         period: "4",
                                         class: ""
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
                                         class: ""
                                     }, {
                                         period: "7",
-                                        class: "CN Lab"
+                                        class: "CN Lab",
+                                        Location: "CSLab-09"
                                     },
                                     {
                                         period: "8",
-                                        class: "CN Lab"
+                                        class: "CN Lab",
+                                        Location: "CSLab-09"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-12",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "DBMS"
+                                        class: "DBMS",
+                                        Location: "L4"
                                     }
                                     , {
                                         period: "2",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "L4"
                                     },
                                     {
                                         period: "3",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "LHC-101"
                                     }, {
                                         period: "4",
                                         class: ""
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
                                         class: ""
                                     }, {
                                         period: "7",
-                                        class: "Scripting Lab"
+                                        class: "Scripting Lab",
+                                        Location: "CSLab-04"
                                     },
                                     {
                                         period: "8",
-                                        class: "Scripting Lab"
+                                        class: "Scripting Lab",
+                                        Location: "CSLab-04"
                                     }
                                 ]
                             }
@@ -1693,130 +1936,151 @@ export const timeTable = [
                         subsections: [
                             {
                                 subsection: "CS-01",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "L1"
                                     }
                                     , {
                                         period: "2",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L1"
                                     },
                                     {
                                         period: "3",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "LHC-105"
                                     }, {
                                         period: "4",
                                         class: ""
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
                                         class: ""
                                     }, {
                                         period: "7",
-                                        class: "CN Lab"
+                                        class: "CN Lab",
+                                        Location: "CSLab-06"
                                     },
                                     {
                                         period: "8",
-                                        class: "CN Lab"
+                                        class: "CN Lab",
+                                        Location: "CSLab-06"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-02",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "L1"
+
                                     }
                                     , {
                                         period: "2",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L1"
                                     },
                                     {
                                         period: "3",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "LHC-105"
                                     }, {
                                         period: "4",
                                         class: ""
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
                                         class: ""
                                     }, {
                                         period: "7",
-                                        class: "Scripting Lab"
+                                        class: "Scripting Lab",
+                                        Location: "CSLab-04"
                                     },
                                     {
                                         period: "8",
-                                        class: "Scripting Lab"
+                                        class: "Scripting Lab",
+                                        Location: "CSLab-04"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-03",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "L1"
                                     }
                                     , {
                                         period: "2",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L1"
                                     },
                                     {
                                         period: "3",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "LHC-105"
                                     }, {
                                         period: "4",
                                         class: ""
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
                                         class: ""
                                     }, {
                                         period: "7",
-                                        class: "DBMS Lab"
+                                        class: "DBMS Lab",
+                                        Location: "CSLab-08"
                                     },
                                     {
                                         period: "8",
-                                        class: "DBMS Lab"
+                                        class: "DBMS Lab",
+                                        Location: "CSLab-08"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-04",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "L1"
                                     }
                                     , {
                                         period: "2",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "L1"
                                     },
                                     {
                                         period: "3",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "LHC-105"
                                     }, {
                                         period: "4",
                                         class: ""
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
                                         class: ""
                                     }, {
                                         period: "7",
-                                        class: "DBMS Lab"
+                                        class: "DBMS Lab",
+                                        Location: "CSLab-09"
                                     },
                                     {
                                         period: "8",
-                                        class: "DBMS Lab"
+                                        class: "DBMS Lab",
+                                        Location: "CSLab-09"
                                     }
                                 ]
                             }
@@ -1826,110 +2090,130 @@ export const timeTable = [
                         subsections: [
                             {
                                 subsection: "CS-05",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "LHC-104"
                                     }
                                     , {
                                         period: "2",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "LHC-104"
                                     },
                                     {
                                         period: "3",
-                                        class: "DBMS Lab"
+                                        class: "DBMS Lab",
+                                        Location: "M-305"
                                     }, {
                                         period: "4",
-                                        class: "DBMS Lab"
+                                        class: "DBMS Lab",
+                                        Location: "M-305"
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
                                         class: ""
                                     }, {
                                         period: "7",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L4"
                                     },
                                     {
                                         period: "8",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L4"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-06",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "LHC-104"
                                     }
                                     , {
                                         period: "2",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "LHC-104"
                                     },
                                     {
                                         period: "3",
-                                        class: "OS Lab"
+                                        class: "OS Lab",
+                                        Location: "CSLab-06"
                                     }, {
                                         period: "4",
-                                        class: "OS Lab"
+                                        class: "OS Lab",
+                                        Location: "CSLab-06"
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
                                         class: ""
                                     }, {
                                         period: "7",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L4"
                                     },
                                     {
                                         period: "8",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L4"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-07",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "LHC-104"
                                     }
                                     , {
                                         period: "2",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "LHC-104"
                                     },
                                     {
                                         period: "3",
-                                        class: "CN Lab"
+                                        class: "CN Lab",
+                                        Location: "CSLab-03"
                                     }, {
                                         period: "4",
-                                        class: "CN Lab"
+                                        class: "CN Lab",
+                                        Location: "CSLab-03"
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
                                         class: ""
                                     }, {
                                         period: "7",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L4"
                                     },
                                     {
                                         period: "8",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L4"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-07",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "CN"
+                                        class: "CN",
+                                        Location: "LHC-104"
                                     }
                                     , {
                                         period: "2",
-                                        class: "AI"
+                                        class: "AI",
+                                        Location: "LHC-104"
                                     },
                                     {
                                         period: "3",
@@ -1939,17 +2223,19 @@ export const timeTable = [
                                         class: ""
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
                                         class: ""
                                     }, {
                                         period: "7",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L4"
                                     },
                                     {
                                         period: "8",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L4"
                                     }
                                 ]
                             }
@@ -1959,130 +2245,156 @@ export const timeTable = [
                         subsections: [
                             {
                                 subsection: "CS-09",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "CN Lab"
+                                        class: "CN Lab",
+                                        Location: "CSLab-10"
                                     }
                                     , {
                                         period: "2",
-                                        class: "CN Lab"
+                                        class: "CN Lab",
+                                        Location: "CSLab-10"
                                     },
                                     {
                                         period: "3",
-                                        class: "Scripting Lab"
+                                        class: "Scripting Lab",
+                                        Location: "CSLab-03"
                                     }, {
                                         period: "4",
-                                        class: "Scripting Lab"
+                                        class: "Scripting Lab",
+                                        Location: "CSLab-03"
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
                                         class: ""
                                     }, {
                                         period: "7",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L5"
                                     },
                                     {
                                         period: "8",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L5"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-10",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "CN Lab"
+                                        class: "CN Lab",
+                                        Location: "CSLab-10"
                                     }
                                     , {
                                         period: "2",
-                                        class: "CN Lab"
+                                        class: "CN Lab",
+                                        Location: "CSLab-10"
                                     },
                                     {
                                         period: "3",
-                                        class: "Scripting Lab"
+                                        class: "Scripting Lab",
+                                        Location: "CSLab-04"
+
                                     }, {
                                         period: "4",
-                                        class: "Scripting Lab"
+                                        class: "Scripting Lab",
+                                        Location: "CSLab-04"
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
                                         class: ""
                                     }, {
                                         period: "7",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L5"
                                     },
                                     {
                                         period: "8",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L5"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-11",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "AI Lab"
+                                        class: "AI Lab",
+                                        Location: "CSLab-01"
                                     }
                                     , {
                                         period: "2",
-                                        class: "AI Lab"
+                                        class: "AI Lab",
+                                        Location: "CSLab-01"
                                     },
                                     {
                                         period: "3",
-                                        class: "DBMS Lab"
+                                        class: "DBMS Lab",
+                                        Location: "CSLab-09"
                                     }, {
                                         period: "4",
-                                        class: "DBMS Lab"
+                                        class: "DBMS Lab",
+                                        Location: "CSLab-09"
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
                                         class: ""
                                     }, {
                                         period: "7",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L5"
                                     },
                                     {
                                         period: "8",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L5"
                                     }
                                 ]
                             }, {
                                 subsection: "CS-12",
-                                Classes: [
+                                cls: [
                                     {
                                         period: "1",
-                                        class: "OS Lab"
+                                        class: "OS Lab",
+                                        Location: "CSLab-06"
                                     }
                                     , {
                                         period: "2",
-                                        class: "OS Lab"
+                                        class: "OS Lab",
+                                        Location: "CSLab-06"
                                     },
                                     {
                                         period: "3",
-                                        class: "AI Lab"
+                                        class: "AI Lab",
+                                        Location: "CSLab-01"
+
                                     }, {
                                         period: "4",
-                                        class: "AI Lab"
+                                        class: "AI Lab",
+                                        Location: "CSLab-01"
                                     }, {
                                         period: "5",
-                                        class: "Break"
+                                        class: ""
                                     }, {
                                         period: "6",
                                         class: ""
                                     }, {
                                         period: "7",
-                                        class: "Scripting"
+                                        class: "Scripting",
+                                        Location: "L5"
                                     },
                                     {
                                         period: "8",
-                                        class: "OS"
+                                        class: "OS",
+                                        Location: "L5"
                                     }
                                 ]
                             }

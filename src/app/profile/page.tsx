@@ -1,5 +1,4 @@
 "use client"
-
 import React, { useState, useEffect } from "react";
 import Chart from "chart.js/auto"; // Import chart.js for rendering charts
 import Link from "next/link";
@@ -10,13 +9,14 @@ import { Bar } from "react-chartjs-2"
 import { CategoryScale, scales } from 'chart.js';
 import { useGenerationStore } from "@/store/idea-generation";
 import { toast } from "sonner";
-import { useRouter } from "next/navigation";
+import { redirect, useRouter } from "next/navigation";
 import { timeTable } from "../timtable"
 import axios from "axios";
 Chart.register(CategoryScale);
 
 const ProfilePage = () => {
   const [user, setUser] = useState("");
+  // const [Attendance,setAttendance]=useState(null)
   const router = useRouter();
   const { setIsLoading } = useGenerationStore();
   const [isActive, setIsActive] = useState({
@@ -50,6 +50,7 @@ const ProfilePage = () => {
       throw error;
     }
   }
+
   useEffect(() => {
     getUserDetails();
   }, [])
@@ -70,7 +71,7 @@ const ProfilePage = () => {
     }
   }
   const date = new Date();
-  const day = date.getDay()
+  const day = date.getDay();
   let section = user.section || 'A';
   if (section === 'A')
     section = 0;
@@ -84,17 +85,30 @@ const ProfilePage = () => {
 
   const DayTimetable = timeTable[day - 1].Branches[0].sections[section].subsections[subsection - 1];
   // console.log();
-  const period1 = DayTimetable.Classes[0].period || "";
-  console.log(period1)
-  // const period2 = DayTimetable.classes[1].period || "";
-  // const period3 = DayTimetable.classes[2].period || "";
-  // const period4 = DayTimetable.classes[3].period || "";
-  // const period5 = DayTimetable.classes[4].period || "";
-  // const period6 = DayTimetable.classes[5].period || "";
-  // const period7 = DayTimetable.classes[6].period || "";
-  // const period8 = DayTimetable.classes[7].period || "";
+  // const period1 = DayTimetable.cls[0].period || "";
+  // console.log(DayTimetable.cls[0].period)
+  const Timetable=DayTimetable?DayTimetable:"";
+ const period1=Timetable? Timetable.cls[0].class : "";
+  const period2 = Timetable? Timetable.cls[1].class : "";
+  const period3 = Timetable? Timetable.cls[2].class : "";
+  const period4 = Timetable? Timetable.cls[3].class : "";
+  const period5 = Timetable? Timetable.cls[4].class : "";
+  const period6 = Timetable? Timetable.cls[5].class : "";
+  const period7 = Timetable? Timetable.cls[6].class : "";
+  const period8 = Timetable? Timetable.cls[7].class: "";
+  const loaction1=Timetable?Timetable.cls[0].Location:""
+  const loaction2=Timetable?Timetable.cls[1].Location:""
+  const loaction3=Timetable?Timetable.cls[2].Location:""
+  const loaction4=Timetable?Timetable.cls[3].Location:""
+  const loaction5=Timetable?Timetable.cls[4].Location:""
+  const loaction6=Timetable?Timetable.cls[5].Location:""
+  const loaction7=Timetable?Timetable.cls[6].Location:""
+  const loaction8=Timetable?Timetable.cls[7].Location:""
 
 
+
+
+// console.log(period2)
 
   return (
     <div className="flex flex-col">
@@ -191,8 +205,8 @@ const ProfilePage = () => {
                 <div className="absolute z-20 w-12 h-12 flex justify-center items-center -top-5 -left-5 text-center font-medium
                         text-xl text-gray-900 rounded-full border-2 border-lime-400 bg-gray-100 group-hover:shadow-[0_0_0_3px_rgb(163,230,53,0.65)] duration-200">1</div>
                 <div className="absolute z-10 w-full h-full p-5 text-lg text-gray-900 rounded-xl bg-lime-400 group-hover:shadow-[0_0_0_3px_rgb(163,230,53,0.65)] duration-200">
-                  <p className="text-center line-clamp-1">{}</p>
-                  <p className="text-center font-medium text-base">LHC-102</p>
+                  <p className="text-center line-clamp-1">{period1? period1 : "No Class"}</p>
+                  <p className="text-center font-medium text-base">{loaction1?loaction1:"----"}</p>
                 </div>
                 <div className="absolute h-[6.4rem] top-24 left-24 border-l border-dashed border-gray-100"></div>
               </div>
@@ -200,8 +214,8 @@ const ProfilePage = () => {
                 <div className="absolute z-20 w-12 h-12 flex justify-center items-center -top-5 -left-5 text-center font-medium
                         text-xl text-gray-900 rounded-full border-2 border-cyan-400 bg-gray-100 group-hover:shadow-[0_0_0_3px_rgb(34,211,238,0.65)] duration-200">3</div>
                 <div className="absolute z-10 w-full h-full p-5 text-lg text-gray-900 rounded-xl bg-cyan-400 group-hover:shadow-[0_0_0_3px_rgb(34,211,238,0.65)] duration-200">
-                  <p className="text-center line-clamp-1"></p>
-                  <p className="text-center font-medium text-base">LHC-102</p>
+                  <p className="text-center line-clamp-1">{period3? period3 : "No Class"} </p>
+                  <p className="text-center font-medium text-base">{loaction3?loaction3:"----"}</p>
                 </div>
                 <div className="absolute h-[6.4rem] top-24 left-24 border-l border-dashed border-gray-100"></div>
               </div>
@@ -209,8 +223,8 @@ const ProfilePage = () => {
                 <div className="absolute z-20 w-12 h-12 flex justify-center items-center -top-5 -left-5 text-center font-medium
                         text-xl text-gray-900 rounded-full border-2 border-orange-400 bg-gray-100 group-hover:shadow-[0_0_0_3px_rgb(251,146,60,0.65)] duration-200">5</div>
                 <div className="absolute z-10 w-full h-full p-5 text-lg text-gray-900 rounded-xl bg-orange-400 group-hover:shadow-[0_0_0_3px_rgb(251,146,60,0.65)] duration-200">
-                  <p className="text-center line-clamp-1"></p>
-                  <p className="text-center font-medium text-base">LHC-102</p>
+                  <p className="text-center line-clamp-1">{period5? period5 : "No Class"} </p>
+                  <p className="text-center font-medium text-base">{loaction5?loaction5:"----"}</p>
                 </div>
                 <div className="absolute h-[6.4rem] top-24 left-24 border-l border-dashed border-gray-100"></div>
               </div>
@@ -218,8 +232,8 @@ const ProfilePage = () => {
                 <div className="absolute z-20 w-12 h-12 flex justify-center items-center -top-5 -left-5 text-center font-medium
                         text-xl text-gray-900 rounded-full border-2 border-teal-400 bg-gray-100 group-hover:shadow-[0_0_0_3px_rgb(45,212,191,0.65)] duration-200">7</div>
                 <div className="absolute z-10 w-full h-full p-5 text-lg text-gray-900 rounded-xl bg-teal-400 group-hover:shadow-[0_0_0_3px_rgb(45,212,191,0.65)] duration-200">
-                  <p className="text-center line-clamp-1">Computer Net...</p>
-                  <p className="text-center font-medium text-base">LHC-102</p>
+                  <p className="text-center line-clamp-1">{period7? period7 : "No Class"}</p>
+                  <p className="text-center font-medium text-base">{loaction7?loaction7:"----"}</p>
                 </div>
                 <div className="absolute h-[6.4rem] top-24 left-24 border-l border-dashed border-gray-100"></div>
               </div>
@@ -230,8 +244,8 @@ const ProfilePage = () => {
                 <div className="absolute z-20 w-12 h-12 flex justify-center items-center -top-5 -left-5 text-center font-medium
                         text-xl text-gray-900 rounded-full border-2 border-cyan-400 bg-gray-100 group-hover:shadow-[0_0_0_3px_rgb(34,211,238,0.65)] duration-200">8</div>
                 <div className="absolute z-10 w-full h-full p-5 text-lg text-gray-900 rounded-xl bg-cyan-400 group-hover:shadow-[0_0_0_3px_rgb(34,211,238,0.65)] duration-200">
-                  <p className="text-center line-clamp-1">Scripting lang...</p>
-                  <p className="text-center font-medium text-base">LHC-102</p>
+                  <p className="text-center line-clamp-1">{period8? period8 : "No Class"}</p>
+                  <p className="text-center font-medium text-base">{loaction8?loaction8:"----"}</p>
                 </div>
                 <div className="absolute  h-[6.4rem] top-[-6.4rem] left-24 border-l border-dashed border-gray-100"></div>
               </div>
@@ -239,8 +253,8 @@ const ProfilePage = () => {
                 <div className="absolute z-20 w-12 h-12 flex justify-center items-center -top-5 -left-5 text-center font-medium
                         text-xl text-gray-900 rounded-full border-2 border-fuchsia-500 bg-gray-100 group-hover:shadow-[0_0_0_3px_rgb(217,70,239,0.65)] duration-200">6</div>
                 <div className="absolute z-10 w-full h-full p-5 text-lg text-gray-900 rounded-xl bg-fuchsia-500 group-hover:shadow-[0_0_0_3px_rgb(217,70,239,0.65)] duration-200">
-                  <p className="text-center line-clamp-1">Operating Sys...</p>
-                  <p className="text-center font-medium text-base">LHC-1022</p>
+                  <p className="text-center line-clamp-1">{period6? period6 : "No Class"}</p>
+                  <p className="text-center font-medium text-base">{loaction6?loaction6:"----"}</p>
                 </div>
                 <div className="absolute  h-[6.4rem] top-[-6.4rem] left-24 border-l border-dashed border-gray-100"></div>
               </div>
@@ -248,8 +262,8 @@ const ProfilePage = () => {
                 <div className="absolute z-20 w-12 h-12 flex justify-center items-center -top-5 -left-5 text-center font-medium
                         text-xl text-gray-900 rounded-full border-2 border-lime-400 bg-gray-100 group-hover:shadow-[0_0_0_3px_rgb(163,230,53,0.65)] duration-200">4</div>
                 <div className="absolute z-10 w-full h-full p-5 text-lg text-gray-900 rounded-xl bg-lime-400 group-hover:shadow-[0_0_0_3px_rgb(163,230,53,0.65)] duration-200">
-                  <p className="text-center line-clamp-1">Break</p>
-                  <p className="text-center font-medium text-base">---</p>
+                  <p className="text-center line-clamp-1">{period4? period4 : "No Class"}</p>
+                  <p className="text-center font-medium text-base">{loaction4?loaction4:"----"}</p>
                 </div>
                 <div className="absolute  h-[6.4rem] top-[-6.4rem] left-24 border-l border-dashed border-gray-100"></div>
               </div>
@@ -257,8 +271,8 @@ const ProfilePage = () => {
                 <div className="absolute z-20 w-12 h-12 flex justify-center items-center -top-5 -left-5 text-center font-medium
                         text-xl text-gray-900 rounded-full border-2 border-orange-400 bg-gray-100 group-hover:shadow-[0_0_0_3px_rgb(251,146,60,0.65)] duration-200">2</div>
                 <div className="absolute z-10 w-full h-full p-5 text-lg text-gray-900 rounded-xl bg-orange-400 group-hover:shadow-[0_0_0_3px_rgb(251,146,60,0.65)] duration-200">
-                  <p className="text-center line-clamp-1">Lab - CN</p>
-                  <p className="text-center font-medium text-base">Lab-10</p>
+                  <p className="text-center line-clamp-1">{period2? period2 : "No Class"}</p>
+                  <p className="text-center font-medium text-base">{loaction2?loaction2:"----"}</p>
                 </div>
                 <div className="absolute  h-[6.4rem] top-[-6.4rem] left-24 border-l border-dashed border-gray-100"></div>
               </div>
@@ -447,11 +461,12 @@ const ProfilePage = () => {
                 <div className="h-4 w-4 rounded-full bg-sky-500 -skew-x-[15deg]"></div>
                 <div className="h-4 w-4 rounded-full bg-sky-500 -skew-x-[15deg]"></div>
                 <div>
+                  <Link href="/review">
                   <button className="relative z-20 w-48 h-14 py-2 px-3 flex gap-4 justify-center items-center rounded-sm bg-gray-200 text-sky-600 hover:bg-gray-200">
-                    <div className="absolute z-30 w-7 h-[70px] right-6 bg-sky-700 -skew-x-[15deg]"></div>
+                    <div className="absolute z-30 w-7 h-[70px] right-6 bg-sky-700 -skew-x-[15deg]" ></div>
                     <p className="text-xl font-medium">View more</p>
                     <i className="z-40 fa-solid fa-arrow-right text-gray-200"></i>
-                  </button>
+                  </button></Link>
                 </div>
               </div>
             </div>
