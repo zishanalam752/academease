@@ -41,7 +41,7 @@ useEffect(()=>{
    checkAuth();
    getUserDetails();
 },[])
-
+const name=user?user.name:"";
   return (
     <div className='w-full h-[20px]'>
       <nav className="w-full bg-black fixed top-0 left-0 right-0 z-30">
@@ -104,7 +104,7 @@ useEffect(()=>{
                 }
                 {
                   isAuth &&
-                  <Link href="/profile" className='w-full h-full'><button className='bg-white py-2 px-2 rounded-lg text-black font-bold text-xl mb-3'>Hi! {user.name}</button></Link>
+                  <Link href="/profile" className='w-full h-full'><button className='bg-white py-2 px-2 rounded-lg text-black font-bold text-xl mb-3'>Hi! {name}</button></Link>
                 }
               </ul>
 
