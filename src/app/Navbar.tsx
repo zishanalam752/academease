@@ -17,7 +17,9 @@ const Navbar: React.FC = () => {
   const[isAuth,setIsAuth]=useState(false);
   // const [user,setUser]=useState("")
   // console.log(user)
-  const [user, setUser] = useState("")
+  const [user, setUser] = useState({
+    name:""
+  })
   const [navbar, setNavbar] = useState<boolean>(false);
   async function getUserDetails() {
     try {
@@ -41,7 +43,9 @@ useEffect(()=>{
    checkAuth();
    getUserDetails();
 },[])
-const name=user?user.name:"";
+// const User = user ? user : "";
+const name = user && typeof user === "object" && user.name ? user.name : "";
+
   return (
     <div className='w-full h-[20px]'>
       <nav className="w-full bg-black fixed top-0 left-0 right-0 z-30">

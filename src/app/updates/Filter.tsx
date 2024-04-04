@@ -6,13 +6,13 @@ const Filter = (props: any) => {
     let category = props.category;
     let setCategory = props.setCategory;
     let filterData = props.filterData;
-    console.log(filterData)
+    // console.log(filterData)
     function filterHandler(title: any) {
         setCategory(title);
         console.log(title);
     }
     filterData.map((data:any)=>{
-        console.log(data.title)
+        // console.log(data.title)
     })
     console.log(category)
     return (
@@ -21,10 +21,10 @@ const Filter = (props: any) => {
             {filterData.map((data: any) => {
                 return (
                     <button
-                        className={`w-36 relative z-10 py-2 px-3 flex gap-4 items-center justify-center rounded-md border-[1.5px] border-transparent bg-sky-900 text-sky-500 hover:border-sky-500 duration-300
+                        className={`w-36 relative z-10 py-2 px-3 flex gap-4 items-center justify-center rounded-md  border-transparent bg-sky-900 text-sky-500 hover:border-sky-500 duration-300
               ${category === data.title
-                                ? "bg-opacity-60 border-sky-500"
-                                : "bg-opacity-40 border-transparent"
+                                ? "bg-opacity-60 border-[1px] border-sky-500 rounded-full"
+                                : "bg-opacity-40"
                             }
             `}
                         key={data.id}
