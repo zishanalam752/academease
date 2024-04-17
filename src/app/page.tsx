@@ -56,7 +56,7 @@ export default function Home() {
         </div></Reveal>
 
         {/* devloper */}
-       <div>
+       {/* <div>
           <div className="w-full flex justify-center">
             <h1 className="text-center font-bold text-3xl md:text-4xl lg:text-5xl mb-8 w-[80%] justify-center items-center">Our <span className="bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent">Developers</span></h1>
           </div>
@@ -64,7 +64,7 @@ export default function Home() {
             <AnimatedTooltipPreview></AnimatedTooltipPreview>
           </div>
 
-        </div>
+        </div> */}
 
         {/* review */}
         <Reveal>

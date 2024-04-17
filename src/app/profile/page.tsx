@@ -375,7 +375,7 @@ const ProfilePage = () => {
                   </div>
                   <div className="mt-7 flex">
                     <button className="relative z-40 py-2 px-3 flex gap-3 items-center rounded-md border-[1.5px] border-transparent bg-sky-900 text-sky-500 group-hover:border-sky-500 duration-200">
-                      <p>Know more</p>
+                      <Link href="https://www.linkedin.com/jobs/search?trk=guest_homepage-basic_guest_nav_menu_jobs&position=1&pageNum=0"><p>Know more</p></Link>
                       <i className="fa-solid fa-arrow-right"></i>
                     </button>
                   </div>
@@ -413,7 +413,7 @@ const ProfilePage = () => {
                   </div>
                   <div className="mt-7 flex">
                     <button className="relative z-40 py-2 px-3 flex gap-3 items-center rounded-md border-[1.5px] border-transparent bg-sky-900 text-sky-500 group-hover:border-sky-500 duration-200">
-                      <p>Know more</p>
+                      <Link href="https://www.linkedin.com/jobs/view/3862655837"><p>Know more</p></Link>
                       <i className="fa-solid fa-arrow-right"></i>
                     </button>
                   </div>
@@ -451,7 +451,7 @@ const ProfilePage = () => {
                   </div>
                   <div className="mt-7 flex">
                     <button className="relative z-40 py-2 px-3 flex gap-3 items-center rounded-md border-[1.5px] border-transparent bg-sky-900 text-sky-500 group-hover:border-sky-500 duration-200">
-                      <p>Know more</p>
+                      <Link href="https://www.linkedin.com/jobs/view/3869090856"><p>Know more</p></Link>
                       <i className="fa-solid fa-arrow-right"></i>
                     </button>
                   </div>
@@ -463,7 +463,7 @@ const ProfilePage = () => {
                 <div className="h-4 w-4 rounded-full bg-sky-500 -skew-x-[15deg]"></div>
                 <div className="h-4 w-4 rounded-full bg-sky-500 -skew-x-[15deg]"></div>
                 <div>
-                  <Link href="/review">
+                  <Link href="/updates">
                   <button className="relative z-20 w-48 h-14 py-2 px-3 flex gap-4 justify-center items-center rounded-sm bg-gray-200 text-sky-600 hover:bg-gray-200">
                     <div className="absolute z-30 w-7 h-[70px] right-6 bg-sky-700 -skew-x-[15deg]" ></div>
                     <p className="text-xl font-medium">View more</p>
