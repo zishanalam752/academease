@@ -17,7 +17,14 @@ import { IoTime } from "react-icons/io5";
 Chart.register(CategoryScale);
 
 const ProfilePage = () => {
-  const [user, setUser] = useState("");
+  const [user, setUser] = useState({
+    section_name:"",
+    subsection:"",
+    name: "",
+    rollno: "" ,
+    branch:"",
+
+  });
   // const [Attendance,setAttendance]=useState(null)
   const router = useRouter();
   const { setIsLoading } = useGenerationStore();
@@ -74,18 +81,18 @@ const ProfilePage = () => {
   }
   const date = new Date();
   const day = date.getDay();
-  let section = user.section || 'A';
-  if (section === 'A')
+  let section=0; 
+  if (user.section_name === 'A')
     section = 0;
-  if (section === 'B')
+  if (user.section_name === 'B')
     section = 1
-  if (section === 'C')
+  if (user.section_name === 'C')
     section = 2;
   const subsectionArr = (user.subsection && user.subsection.split('-')) || ["", ""];
   let subsection = Number(subsectionArr[1]);
   console.log(subsection)
 
-  const DayTimetable = timeTable[day - 1].Branches[0].sections[section].subsections[subsection - 1];
+  const DayTimetable = timeTable[day - 1].Branches[0].sections[section].subsections[subsection - 1]
   // console.log();
   // const period1 = DayTimetable.cls[0].period || "";
   // console.log(DayTimetable.cls[0].period)
